@@ -1,0 +1,156 @@
+.color {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(125,75,122,1) 10%, rgba(45,30,80,.1) 100%);
+}
+.texture {
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/texture.jpg");
+    mix-blend-mode: multiply;
+    opacity: .35;
+}
+
+.controls,
+.menu {
+    display: none;
+}
+
+.intro {
+    position: relative;
+    background: black;
+    h1 {
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translateX(-50%);
+        color: white;
+        z-index: 100;
+        span {
+            position:relative;
+            top:10px;
+            left:10px;
+            font-size:50px;
+            font-weight:600;
+            opacity:0;
+            animation: fade 800ms ease-in-out forwards;
+            @for $i from 1 through 20 {
+                &:nth-child(#{$i}){
+                    animation-delay: calc(1.875s + (#{$i} * .075s));
+                }
+            }
+        }
+    }
+    .img {
+        position: absolute;
+        background-color: transparent;
+        background-position: center;
+        background-size: contain;
+        z-index: 10;
+        &.wall {
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 33.333%;
+            background-image: url('../images/img-wall.png');
+            background-repeat: repeat-x;
+            animation: wallSlideIn 1.25s ease-in-out;
+            z-index: 100;
+        }
+        &.mountain {
+            left: 0;
+            bottom: 33%;
+            width: 100%;
+            height: 33.333%;
+            transform: translateY(200%);
+            background-repeat: no-repeat;
+            animation: mtSlideIn 1.2s ease-in-out;
+            animation-fill-mode: forwards;
+            &.left {
+                background-image: url('../images/img-mt-left.png');
+                background-position: left;
+                animation-delay: 1.75s;
+            }
+            &.right {
+                background-image: url('../images/img-mt-right.png');
+                background-position: right;
+                animation-delay: 2s;
+            }
+            z-index: 99;
+        }
+        &.people {
+            bottom: 0;
+            height: 50%;
+            background-repeat: no-repeat;
+            aspect-ratio: 1/2.25;
+            animation: peopleSlideIn 1.5s ease-in-out;
+            animation-fill-mode: forwards;
+            opacity: 0;
+            z-index: 101;
+            &.left {
+                left: 30%;
+                background-image: url('../images/img-people01.png');
+                animation-delay: .25s;
+            }
+            &.right {
+                left: 60%;
+                background-image: url('../images/img-people02.png');
+                animation-delay: .35s;
+            }
+        }
+    }
+}
+
+@keyframes wallSlideIn {
+    from {
+        transform: translateY(100%) scale(2);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+}
+@keyframes peopleSlideIn {
+    from {
+        transform: translateY(400%) scale(8);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes mtSlideIn {
+    0% {
+        transform: translateY(200%);
+    }
+    35% {
+        transform: translateY(1%) scale(1.075);
+    }
+    100% {
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes fade {
+    0% {
+        transform: translate(-1rem, -1rem);
+        filter:blur(15px);
+        opacity:0;
+    }
+    50% {
+        filter:blur(10px);
+        opacity:0.9;
+    }
+    100% {
+        transform: translate(0, 0);
+        filter:blur(0px);
+        opacity:1;
+    }
+}
