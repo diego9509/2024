@@ -1,5 +1,4 @@
-@charset "UTF-8";
-@import url(/Volumes/part2/work/2023/전국시화문해교육시화전/font/pretendard-subset.css);
+@import url(/Volumes/part2/work/2023/edu/font/pretendard-subset.css);
 *,
 *:before,
 *:after {
@@ -380,19 +379,129 @@ body {
           justify-content: space-between;
 }
 
+.flex.align-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   height: 100%;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(10%, #b87598), to(#703678));
   background: linear-gradient(0deg, #b87598 10%, #703678 100%);
 }
 
+.main header,
+.main footer {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+
+.main section {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.main section .wrapper {
+  width: 1440px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.main section article {
+  display: inline-block;
+  width: 25%;
+  height: 100%;
+  background-image: url("data:image/svg+xml,%3Csvg width='354' height='603' viewBox='0 0 354 603' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M353.97 102.19V602.69H0V102.19C0 99.48 1.79 96.78 5.37 94.71L164.03 3.1C166.71 1.55 170.01 0.59 173.46 0.2C173.62 0.18 173.78 0.16 173.94 0.15C174.17 0.13 174.41 0.1 174.64 0.09C175.08 0.06 175.52 0.03 175.97 0.02C176.3 0.01 176.64 0 176.97 0C177.3 0 177.64 0 177.97 0.02C178.41 0.02 178.86 0.06 179.3 0.09C179.53 0.1 179.75 0.12 179.97 0.15C183.61 0.49 187.11 1.47 189.92 3.1L348.59 94.71C352.17 96.77 353.96 99.48 353.96 102.19H353.97Z' fill='url(%23paint0_linear_7_4)'/%3E%3Cpath d='M176.98 203.04C172.2 203.04 167.72 201.97 164.36 200.03L5.69998 108.42C2.44998 106.55 0.669983 104.1 0.669983 101.52C0.669983 98.94 2.45998 96.49 5.69998 94.62L164.37 3.01C167.73 1.07 172.21 0 176.98 0C181.76 0 186.24 1.07 189.6 3.01L348.27 94.62C351.51 96.49 353.3 98.94 353.3 101.52C353.3 104.1 351.51 106.55 348.27 108.42L189.6 200.03C186.24 201.97 181.76 203.04 176.98 203.04Z' fill='white'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_7_4' x1='0' y1='0' x2='353.97' y2='0' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23ADBEDB'/%3E%3Cstop offset='0.17' stop-color='%23A2ADC1'/%3E%3Cstop offset='0.34' stop-color='%239BA1B0'/%3E%3Cstop offset='0.46' stop-color='%23999EAA'/%3E%3Cstop offset='0.54' stop-color='%23D3DDEB'/%3E%3Cstop offset='1' stop-color='%23D3DAE6'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+
+header {
+  width: 1440px;
+  margin: 0 auto;
+  padding-top: 2.5rem;
+}
+
+header img {
+  width: 600px;
+}
+
 header a {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: auto;
   color: white;
   text-decoration: none;
   text-align: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+header a:last-child {
+  margin-left: 4rem;
+}
+
+header a:last-child:before {
+  content: '';
+  display: inline-block;
+  position: relative;
+  left: -2rem;
+  width: 1px;
+  height: 2rem;
+  background: white;
 }
 
 footer {
   background: #e6e6e6;
+  color: #808080;
+  padding: .75rem 0;
+}
+
+footer > .flex {
+  width: 1440px;
+  margin: 0 auto;
+}
+
+footer ul {
+  list-style: none;
+  line-height: 150%;
+  border-left: 1px solid #bbb;
+  font-size: .75rem;
+  margin-left: 1.75rem;
+  padding-left: 1.75rem;
+}
+
+footer ul a {
+  color: #808080;
+}
+
+footer .logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .logos a {
+  margin-left: 2rem;
+}
+
+footer .logos img {
+  height: 1.75rem;
 }
 /*# sourceMappingURL=style.css.map */
