@@ -1,3 +1,5 @@
+@charset "UTF-8";
+@import url(/Volumes/part2/work/2023/전국시화문해교육시화전/font/pretendard-subset.css);
 *,
 *:before,
 *:after {
@@ -11,6 +13,7 @@ body {
   padding: 0;
   height: 100%;
   overflow: hidden;
+  font-family: 'Pretendard', sans-serif;
 }
 
 .color {

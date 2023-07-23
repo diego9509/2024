@@ -5,12 +5,15 @@
     box-sizing: border-box;
 }
 
+@import "../font/pretendard-subset.css";
+
 html,
 body {
     margin: 0;
     padding: 0;
     height: 100%;
     overflow: hidden;
+    font-family: 'Pretendard', sans-serif;
 }
 
 @import "./intro.scss";
