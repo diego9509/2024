@@ -538,10 +538,50 @@ footer .logos img {
 .sub {
   height: 100%;
   background: #e6e6e6;
+  border-width: .625rem 0 0 0;
+  border-style: solid;
+  border-color: #F06673;
+}
+
+.sub > .back {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  -webkit-filter: drop-shadow(0 1px 2px rgba(50, 50, 0, 0.25));
+          filter: drop-shadow(0 1px 2px rgba(50, 50, 0, 0.25));
+}
+
+.sub > .back svg {
+  width: 100%;
+}
+
+.sub > .back svg path {
+  fill: #00CEA6;
 }
 
 .sub .wrapper {
   width: 1440px;
   margin: 0 auto;
+}
+
+.sub .wrapper img {
+  display: block;
+}
+
+.sub .wrapper .logo {
+  height: 9.125rem;
+  margin-bottom: 3.25rem;
+}
+
+.sub .wrapper .title {
+  height: 2.5rem;
+  margin-bottom: 2.75rem;
+}
+
+.sub .wrapper p {
+  font-size: 1.125rem;
+  line-height: 140%;
 }
 /*# sourceMappingURL=style.css.map */
