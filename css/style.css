@@ -724,6 +724,10 @@ footer .logos img {
   .main section .wrapper .flex {
     padding: 0 3.75rem;
   }
+  .main section .wrapper .flex article img {
+    width: 71%;
+    margin: 0 auto;
+  }
   .main header,
   .main footer > .flex {
     width: 100%;
