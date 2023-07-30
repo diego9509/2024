@@ -19,13 +19,14 @@ $color-mint: #00CEA6;
         svg {
             width: 100%;
             path {
-                fill: $color-mint;
+                fill: $color-red;
             }
         }
     }
     .wrapper {
         width: $container-size;
         margin: 0 auto;
+        padding-top: 3rem;
         img {
             display: block;
         }
@@ -40,6 +41,16 @@ $color-mint: #00CEA6;
         p {
             font-size: 1.125rem;
             line-height: 140%;
+        }
+        .evenly {
+            > div {
+                width: 50%;
+                padding-left: 6.5rem;
+            }
+            > img {
+                width: 512px;
+                margin: 0 auto;
+            }
         }
     }
 }
