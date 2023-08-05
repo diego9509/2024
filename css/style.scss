@@ -230,12 +230,11 @@ footer {
     }
 }
 
+$color-red: #F06673;
+$color-yellow: #FF8B00;
+$color-green: #93D600;
+$color-mint: #00CEA6;
 .sub {
-    $color-red: #F06673;
-    $color-yellow: #FF8B00;
-    $color-green: #93D600;
-    $color-mint: #00CEA6;
-
     height: 100%;
     background: #e6e6e6;
     border-width: .625rem 0 0 0;
@@ -352,6 +351,105 @@ footer {
                 top: calc(-2.5rem + 18px);
                 left: 8%;
             }
+        }
+    }
+}
+
+.detail {
+    height: 100%;
+    background: #e6e6e6;
+    border-width: .625rem 0 0 0;
+    border-style: solid;
+    border-color: $color-red;
+    > .back {
+        position: absolute;
+        top: 1.5rem;
+        left: 1.5rem;
+        width: 2.5rem;
+        height: 2.5rem;
+        filter: drop-shadow(0 1px 2px rgba(50, 50, 0, 0.25));
+        svg {
+            width: 100%;
+            path {
+                fill: $color-red;
+            }
+        }
+    }
+    .carousel,
+    .slick-list,
+    .slick-track {
+        height: 100%;
+    }
+    .wrapper {
+        width: $container-size;
+        height: 100%;
+        margin: 0 auto;
+    }
+    .evenly {
+        height: 100%;
+        > div {
+            width: 50%;
+            height: 100%;
+            padding: 0 2rem;
+        }
+        .image-wrapper {
+            position: relative;
+            height: calc(100% - 100px);
+            background-image: url("../images/img_bg.svg");
+            background-repeat: repeat-x;
+            box-shadow: 0 2px 4px rgba(0,0,0,.375);
+            padding: 0 5rem;
+            z-index: 2;
+            &-bottom {
+                position: relative;
+                z-index: 1;
+                transform: translateY(-50%);
+                background: radial-gradient(circle, rgba(141,117,108,1) 35%, rgba(215,196,186,1) 55%, rgba(255,255,255,0) 75%);
+                width: 120%;
+                left: -10%;
+                padding-bottom: 120%;
+                transform: scaleY(  .0625 ) translateY(-50%);
+                transform-origin: top center;
+                border-radius: 9999px;
+            }
+            .light {
+                margin: 0 auto;
+            }
+            img:not(.light) {
+                width: 100%;
+            }
+        }
+        .logo {
+            height: 5.625rem;
+            margin: 5.5rem 0 6.75rem
+        }
+    }
+    .info {
+        .flex{
+            margin-bottom: 1.25rem;
+            strong {
+                font-size: 1.75rem;
+            }
+        }
+    }
+    .label {
+        background: $color-red;
+        color: white;
+        font-size: 1.5rem;
+        font-weight: 700;
+        flex-shrink: 0;
+        min-width: 8.25rem;
+        text-align: center;
+        padding: .75rem 1.5rem;
+        margin-right: 1.5rem;
+        & + h3 {
+            font-size: 1.75rem;
+            margin: 0;
+        }
+        & + p {
+            line-height: 150%;
+            margin: 0;
+            padding: .875rem 0 0;
         }
     }
 }
