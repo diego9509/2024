@@ -599,6 +599,18 @@ footer .logos img {
           transform: translateY(-49%);
 }
 
+.main section article:after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  bottom: -50%;
+  left: 0;
+  width: 100%;
+  padding-bottom: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(#ADBEDB), color-stop(17%, #A2ADC1), color-stop(34%, #9BA1B0), color-stop(46%, #999EAA), color-stop(54%, #D3DDEB), to(#D3DAE6));
+  background: linear-gradient(90deg, #ADBEDB 0%, #A2ADC1 17%, #9BA1B0 34%, #999EAA 46%, #D3DDEB 54%, #D3DAE6 100%);
+}
+
 .main section article img {
   position: absolute;
   top: 0;
@@ -1038,6 +1050,21 @@ footer .logos img {
 }
 
 @media (max-width: 1080px) {
+  footer .flex img {
+    width: 8rem;
+  }
+  footer .flex ul {
+    font-size: 11px;
+    margin-left: 1rem;
+    padding-left: 1rem;
+  }
+  footer .logos a {
+    margin-left: 1rem;
+  }
+  footer .logos img {
+    width: initial;
+    height: 1.25rem;
+  }
   .sub .wrapper .logo {
     height: 4rem;
   }
@@ -1145,6 +1172,9 @@ footer .logos img {
     width: 50%;
     -webkit-animation-delay: 0s !important;
             animation-delay: 0s !important;
+  }
+  .main section .wrapper .flex article:after {
+    display: none;
   }
   .main section .wrapper .flex article h3 {
     position: relative;
