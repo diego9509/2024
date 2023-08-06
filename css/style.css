@@ -412,8 +412,8 @@ header {
   padding-top: 2.5rem;
 }
 
-header img {
-  width: 600px;
+header h2 {
+  display: none;
 }
 
 header a {
@@ -458,6 +458,10 @@ footer {
 footer > .flex {
   width: 1440px;
   margin: 0 auto;
+}
+
+footer > .flex:not(.align-center) {
+  display: none;
 }
 
 footer ul {
@@ -551,6 +555,12 @@ footer .logos img {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+  text-align: center;
+}
+
+.main section .wrapper h2 img {
+  width: 85%;
+  margin: 0 auto;
 }
 
 .main section .wrapper h2 span {
@@ -665,6 +675,9 @@ footer .logos img {
   .main section .wrapper {
     width: 100%;
   }
+  .main section .wrapper h2 img {
+    height: 72px;
+  }
   .main section .wrapper .flex {
     padding: 0 3.75rem;
   }
@@ -677,6 +690,123 @@ footer .logos img {
     width: 100%;
     padding-left: 3.75rem;
     padding-right: 3.75rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .main {
+    max-height: 100%;
+  }
+  .main header {
+    height: 4rem;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+    padding: .75rem 0;
+  }
+  .main header h2 {
+    display: block;
+    margin: 0;
+  }
+  .main header h2 img {
+    height: 100%;
+  }
+  .main header .flex {
+    display: none;
+  }
+  .main section {
+    height: calc(100% - 7rem);
+  }
+  .main section .wrapper {
+    display: block;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: initial;
+  }
+  .main section .wrapper h2 {
+    display: none;
+  }
+  .main section .wrapper .flex {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: 25%;
+    width: 100%;
+    position: initial;
+    padding: 0 1rem;
+  }
+  .main section .wrapper .flex:last-of-type {
+    height: 50%;
+  }
+  .main section .wrapper .flex:last-of-type article {
+    height: 50%;
+  }
+  .main section .wrapper .flex article {
+    width: 50%;
+  }
+  .main section .wrapper .flex article h3 {
+    position: relative;
+    height: 100%;
+    margin: 0;
+    padding-top: 1.5rem;
+  }
+  .main section .wrapper .flex article img {
+    position: relative;
+    display: block;
+    -webkit-transform: none;
+            transform: none;
+    top: initial;
+    left: initial;
+  }
+  .main section .wrapper .flex article img:first-of-type {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 80%;
+  }
+  .main section .wrapper .flex article img:last-of-type {
+    height: 100%;
+  }
+  .main section article {
+    background: none;
+  }
+  .main section article:before {
+    display: none;
+  }
+  .main footer {
+    height: 3rem;
+    padding: 0;
+  }
+  .main footer > .align-center {
+    display: none;
+  }
+  .main footer > .flex:not(.align-center) {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0;
+  }
+  .main footer > .flex:not(.align-center) a {
+    width: 50%;
+    color: #333;
+    font-size: 1.25rem;
+    text-align: center;
+    text-decoration: none;
+  }
+  .main footer > .flex:not(.align-center) a br {
+    display: none;
+  }
+  .main footer > .flex:not(.align-center) a:last-of-type {
+    border-left: 1px solid #aaa;
   }
 }
 
