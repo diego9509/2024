@@ -671,6 +671,35 @@ footer .logos img {
   }
 }
 
+.slick-prev,
+.slick-next {
+  top: calc(50% + 29px);
+  width: 2.5rem;
+  height: 2.5rem;
+  background-image: url("data:image/svg+xml,%3Csvg width='56' height='87' viewBox='0 0 56 87' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg filter='url(%23filter0_d_31_34663)'%3E%3Cpath d='M46.16 70.0599L16.46 40.3599L46.16 10.6599C46.94 9.87988 46.94 8.60988 46.16 7.82988L41.92 3.58988C41.14 2.80988 39.87 2.80988 39.09 3.58988L7.98003 34.6999L3.74003 38.9399C2.96003 39.7199 2.96003 40.9899 3.74003 41.7699L7.98003 46.0099L39.09 77.1199C39.87 77.8999 41.14 77.8999 41.92 77.1199L46.16 72.8799C46.94 72.0999 46.94 70.8299 46.16 70.0499V70.0599Z' fill='white'/%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='filter0_d_31_34663' x='0.155029' y='0.00488281' width='55.59' height='86.7002' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0' result='hardAlpha'/%3E%3CfeOffset dx='3' dy='3'/%3E%3CfeGaussianBlur stdDeviation='3'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0'/%3E%3CfeBlend mode='normal' in2='BackgroundImageFix' result='effect1_dropShadow_31_34663'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='effect1_dropShadow_31_34663' result='shape'/%3E%3C/filter%3E%3C/defs%3E%3C/svg%3E%0A");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 10;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  content: '';
+}
+
+.slick-next {
+  background-image: url("data:image/svg+xml,%3Csvg width='56' height='87' viewBox='0 0 56 87' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg filter='url(%23filter0_d_31_34664)'%3E%3Cpath d='M3.84 10.6601L33.5401 40.3601L3.84 70.0601C3.06 70.8401 3.06 72.1101 3.84 72.8901L8.08 77.1301C8.85999 77.9101 10.1301 77.9101 10.9101 77.1301L42.0201 46.0201L46.26 41.7801C47.04 41.0001 47.04 39.7301 46.26 38.9501L42.0201 34.7101L10.9101 3.60014C10.1301 2.82014 8.85999 2.82014 8.08 3.60014L3.84 7.84014C3.06 8.62014 3.06 9.89014 3.84 10.6701V10.6601Z' fill='white'/%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='filter0_d_31_34664' x='0.255005' y='0.0151367' width='55.59' height='86.7002' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0' result='hardAlpha'/%3E%3CfeOffset dx='3' dy='3'/%3E%3CfeGaussianBlur stdDeviation='3'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0'/%3E%3CfeBlend mode='normal' in2='BackgroundImageFix' result='effect1_dropShadow_31_34664'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='effect1_dropShadow_31_34664' result='shape'/%3E%3C/filter%3E%3C/defs%3E%3C/svg%3E%0A");
+}
+
+.slick-prev:hover, .slick-prev:focus {
+  background: url("data:image/svg+xml,%3Csvg width='56' height='87' viewBox='0 0 56 87' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg filter='url(%23filter0_d_31_34663)'%3E%3Cpath d='M46.16 70.0599L16.46 40.3599L46.16 10.6599C46.94 9.87988 46.94 8.60988 46.16 7.82988L41.92 3.58988C41.14 2.80988 39.87 2.80988 39.09 3.58988L7.98003 34.6999L3.74003 38.9399C2.96003 39.7199 2.96003 40.9899 3.74003 41.7699L7.98003 46.0099L39.09 77.1199C39.87 77.8999 41.14 77.8999 41.92 77.1199L46.16 72.8799C46.94 72.0999 46.94 70.8299 46.16 70.0499V70.0599Z' fill='white'/%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='filter0_d_31_34663' x='0.155029' y='0.00488281' width='55.59' height='86.7002' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0' result='hardAlpha'/%3E%3CfeOffset dx='3' dy='3'/%3E%3CfeGaussianBlur stdDeviation='3'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0'/%3E%3CfeBlend mode='normal' in2='BackgroundImageFix' result='effect1_dropShadow_31_34663'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='effect1_dropShadow_31_34663' result='shape'/%3E%3C/filter%3E%3C/defs%3E%3C/svg%3E%0A") no-repeat center/contain;
+}
+
+.slick-next:hover, .slick-next:focus {
+  background: url("data:image/svg+xml,%3Csvg width='56' height='87' viewBox='0 0 56 87' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg filter='url(%23filter0_d_31_34664)'%3E%3Cpath d='M3.84 10.6601L33.5401 40.3601L3.84 70.0601C3.06 70.8401 3.06 72.1101 3.84 72.8901L8.08 77.1301C8.85999 77.9101 10.1301 77.9101 10.9101 77.1301L42.0201 46.0201L46.26 41.7801C47.04 41.0001 47.04 39.7301 46.26 38.9501L42.0201 34.7101L10.9101 3.60014C10.1301 2.82014 8.85999 2.82014 8.08 3.60014L3.84 7.84014C3.06 8.62014 3.06 9.89014 3.84 10.6701V10.6601Z' fill='white'/%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='filter0_d_31_34664' x='0.255005' y='0.0151367' width='55.59' height='86.7002' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0' result='hardAlpha'/%3E%3CfeOffset dx='3' dy='3'/%3E%3CfeGaussianBlur stdDeviation='3'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0'/%3E%3CfeBlend mode='normal' in2='BackgroundImageFix' result='effect1_dropShadow_31_34664'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='effect1_dropShadow_31_34664' result='shape'/%3E%3C/filter%3E%3C/defs%3E%3C/svg%3E%0A") no-repeat center/contain;
+}
+
 .sub {
   height: 100%;
   background: #e6e6e6;
@@ -756,26 +785,6 @@ footer .logos img {
 
 .sub .carousel {
   padding: 0 5rem;
-}
-
-.sub .carousel .slick-prev,
-.sub .carousel .slick-next {
-  top: calc(50% + 29px);
-  width: 2.5rem;
-  height: 2.5rem;
-  background-image: url("data:image/svg+xml,%3Csvg width='56' height='87' viewBox='0 0 56 87' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg filter='url(%23filter0_d_31_34663)'%3E%3Cpath d='M46.16 70.0599L16.46 40.3599L46.16 10.6599C46.94 9.87988 46.94 8.60988 46.16 7.82988L41.92 3.58988C41.14 2.80988 39.87 2.80988 39.09 3.58988L7.98003 34.6999L3.74003 38.9399C2.96003 39.7199 2.96003 40.9899 3.74003 41.7699L7.98003 46.0099L39.09 77.1199C39.87 77.8999 41.14 77.8999 41.92 77.1199L46.16 72.8799C46.94 72.0999 46.94 70.8299 46.16 70.0499V70.0599Z' fill='white'/%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='filter0_d_31_34663' x='0.155029' y='0.00488281' width='55.59' height='86.7002' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0' result='hardAlpha'/%3E%3CfeOffset dx='3' dy='3'/%3E%3CfeGaussianBlur stdDeviation='3'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0'/%3E%3CfeBlend mode='normal' in2='BackgroundImageFix' result='effect1_dropShadow_31_34663'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='effect1_dropShadow_31_34663' result='shape'/%3E%3C/filter%3E%3C/defs%3E%3C/svg%3E%0A");
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.sub .carousel .slick-prev:before,
-.sub .carousel .slick-next:before {
-  content: '';
-}
-
-.sub .carousel .slick-next {
-  background-image: url("data:image/svg+xml,%3Csvg width='56' height='87' viewBox='0 0 56 87' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg filter='url(%23filter0_d_31_34664)'%3E%3Cpath d='M3.84 10.6601L33.5401 40.3601L3.84 70.0601C3.06 70.8401 3.06 72.1101 3.84 72.8901L8.08 77.1301C8.85999 77.9101 10.1301 77.9101 10.9101 77.1301L42.0201 46.0201L46.26 41.7801C47.04 41.0001 47.04 39.7301 46.26 38.9501L42.0201 34.7101L10.9101 3.60014C10.1301 2.82014 8.85999 2.82014 8.08 3.60014L3.84 7.84014C3.06 8.62014 3.06 9.89014 3.84 10.6701V10.6601Z' fill='white'/%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='filter0_d_31_34664' x='0.255005' y='0.0151367' width='55.59' height='86.7002' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0' result='hardAlpha'/%3E%3CfeOffset dx='3' dy='3'/%3E%3CfeGaussianBlur stdDeviation='3'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0'/%3E%3CfeBlend mode='normal' in2='BackgroundImageFix' result='effect1_dropShadow_31_34664'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='effect1_dropShadow_31_34664' result='shape'/%3E%3C/filter%3E%3C/defs%3E%3C/svg%3E%0A");
 }
 
 .sub .carousel .slick-slide {
@@ -864,6 +873,21 @@ footer .logos img {
   height: 100%;
 }
 
+.detail .slick-prev,
+.detail .slick-next {
+  top: 50%;
+  width: 4.5rem;
+  height: 4.5rem;
+}
+
+.detail .slick-prev {
+  left: 2rem;
+}
+
+.detail .slick-next {
+  right: 2rem;
+}
+
 .detail .wrapper {
   width: 1440px;
   height: 100%;
@@ -908,11 +932,20 @@ footer .logos img {
 }
 
 .detail .evenly .image-wrapper .light {
+  position: relative;
+  z-index: 2;
+  width: 100%;
   margin: 0 auto;
 }
 
 .detail .evenly .image-wrapper img:not(.light) {
-  width: 100%;
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 75%;
+  z-index: 1;
 }
 
 .detail .evenly .logo {
@@ -985,6 +1018,23 @@ footer .logos img {
   .sub .wrapper p {
     font-size: .875rem;
   }
+  .detail .wrapper {
+    width: 100%;
+    padding: 0 4rem;
+  }
+}
+
+@media (max-width: 1280px) {
+  .detail .wrapper .evenly > div:first-of-type {
+    padding: 0;
+  }
+  .detail .wrapper .evenly .logo {
+    height: 5rem;
+  }
+  .detail .wrapper .evenly .label {
+    font-size: 1.25rem;
+    min-width: 7.375rem;
+  }
 }
 
 @media (max-width: 1080px) {
@@ -1005,6 +1055,41 @@ footer .logos img {
   }
   .sub .wrapper .evenly .menu-image img {
     width: 100%;
+  }
+  .detail .back {
+    z-index: 5;
+  }
+  .detail .wrapper {
+    padding: 0 2rem;
+  }
+  .detail .wrapper .evenly > div {
+    width: 40%;
+  }
+  .detail .wrapper .evenly > div:first-of-type {
+    width: 60%;
+  }
+  .detail .wrapper .evenly .logo {
+    width: 100%;
+    height: initial;
+  }
+  .detail .wrapper .evenly .label {
+    font-size: 1rem;
+    min-width: 6rem;
+    padding: .5rem 1rem;
+    margin-bottom: .5rem;
+  }
+  .detail .wrapper .evenly .label + h3 {
+    font-size: 1.5rem;
+  }
+  .detail .wrapper .evenly .info .flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    margin-bottom: 2rem;
   }
 }
 
@@ -1058,6 +1143,8 @@ footer .logos img {
   }
   .main section .wrapper .flex article {
     width: 50%;
+    -webkit-animation-delay: 0s !important;
+            animation-delay: 0s !important;
   }
   .main section .wrapper .flex article h3 {
     position: relative;
@@ -1113,7 +1200,7 @@ footer .logos img {
   .main footer > .flex:not(.align-center) a {
     width: 50%;
     color: #333;
-    font-size: 1.25rem;
+    font-size: 1rem;
     text-align: center;
     text-decoration: none;
   }
@@ -1147,6 +1234,46 @@ footer .logos img {
   .sub .wrapper .carousel img {
     -webkit-box-shadow: none;
             box-shadow: none;
+  }
+  .detail .wrapper {
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  .detail .wrapper .evenly {
+    display: block;
+  }
+  .detail .wrapper .evenly > div {
+    width: 100% !important;
+    height: initial;
+  }
+  .detail .wrapper .evenly > div:first-of-type {
+    height: 80%;
+  }
+  .detail .wrapper .evenly .logo {
+    display: none;
+  }
+  .detail .wrapper .evenly .image-wrapper {
+    height: 100%;
+    padding-bottom: 5rem;
+  }
+  .detail .wrapper .evenly .image-wrapper .light {
+    width: 75%;
+  }
+  .detail .wrapper .evenly .info {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+  .detail .slick-prev,
+  .detail .slick-next {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .detail .slick-prev {
+    left: .5rem;
+  }
+  .detail .slick-next {
+    right: .5rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
