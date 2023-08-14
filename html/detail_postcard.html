@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../js/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="../js/slick/slick.css" />
+    <link rel="stylesheet" href="../js/slick/slick-theme.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Document</title>
+</head>
+<body>
+    <div class="detail love">
+        <a class="back" href="" alt="뒤로 가">
+            <svg width="74" height="74" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.90764 39.2064L34.2422 70.5409V70.5223C35.4524 71.7325 37.4259 71.7325 38.6361 70.5223L40.833 68.3253C42.0432 67.1152 42.0432 65.1416 40.833 63.9314L18.5752 41.6736H68.8908C70.608 41.6736 72.0001 40.2816 72.0001 38.5644V35.4551C72.0001 33.7379 70.608 32.3459 68.8908 32.3459H18.556L40.833 10.0688C42.0432 8.85863 42.0432 6.88509 40.833 5.67491L38.6361 3.47795C37.4259 2.26777 35.4524 2.26777 34.2422 3.47795L2.90764 34.8125C1.69745 36.0227 1.69745 37.9962 2.90764 39.2064Z" fill="#F06673"/>
+            </svg>                
+        </a>
+        
+        <div class="carousel">
+            <section>
+                <div class="wrapper">
+                    <article class="flex evenly align-start">
+                        <div>
+                            <div class="image-wrapper">
+                                <img class="light" src="../images/img_light.png" />
+                                <img src="../images/img_sample_01.png" />
+                            </div>
+                            <div class="image-wrapper-bottom"></div>
+                        </div>
+                        <div class="info">
+                            <img class="logo" src="../images/logo_black.svg" alt="제 12회 전국성인문해교육 시화전 온라인 전시" />
+                            <div class="flex align-center">
+                                <label class="label">작품명</label>
+                                <h3>살구꽃이 피었습니다.</h3>
+                            </div>
+                            <div class="flex align-center">
+                                <label class="label">작가</label>
+                                <div>
+                                    <strong>김윤자</strong>
+                                    <span>살구평생학교</span>
+                                </div>
+                            </div>
+                            <div class="flex align-start">
+                                <label class="label">작품설명</label>
+                                <p>
+                                    글을 모르던 지난 세월 큰 동서의 시집살이로 고생하다가, 살구평생학교에서 글을 배운 후 찾은 자신감을 꽃이 피는 것에 비유하여 표현한 작품이다.
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section>
+                <div class="wrapper">
+                    <article class="flex evenly align-start">
+                        <div>
+                            <div class="image-wrapper">
+                                <img class="light" src="../images/img_light.png" />
+                                <img src="../images/img_sample_02.png" />
+                            </div>
+                            <div class="image-wrapper-bottom"></div>
+                        </div>
+                        <div class="info">
+                            <img class="logo" src="../images/logo_black.svg" alt="제 12회 전국성인문해교육 시화전 온라인 전시" />
+                            <div class="flex align-center">
+                                <label class="label">작품명</label>
+                                <h3>살구꽃이 피었습니다.</h3>
+                            </div>
+                            <div class="flex align-center">
+                                <label class="label">작가</label>
+                                <div>
+                                    <strong>김윤자</strong>
+                                    <span>살구평생학교</span>
+                                </div>
+                            </div>
+                            <div class="flex align-start">
+                                <label class="label">작품설명</label>
+                                <p>
+                                    글을 모르던 지난 세월 큰 동서의 시집살이로 고생하다가, 살구평생학교에서 글을 배운 후 찾은 자신감을 꽃이 피는 것에 비유하여 표현한 작품이다.
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </div>
+
+    </div>
+</body>
+<script>
+$(document).ready(function(){
+  $('.carousel').slick({
+    dots: false,
+    slidesToShow: 1,
+    infinite: true,
+  });
+});
+</script>
+</html>
