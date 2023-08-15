@@ -577,6 +577,59 @@ footer .logos img {
 .sub.postcard > .back svg path {
   fill: #00CEA6;
 }
+.sub.visitor {
+  border-color: #23ABE8;
+  background: linear-gradient(0deg, #E7FAFF 0%, #C6E9F2 100%);
+}
+.sub.visitor > .back svg path {
+  fill: #23ABE8;
+}
+.sub.visitor .evenly > div:first-of-type {
+  padding-right: 5rem;
+}
+.sub.visitor .input-wrapper {
+  background: #23ABE8;
+  text-align: center;
+  padding: 1rem 1.25rem;
+}
+.sub.visitor .input-wrapper input,
+.sub.visitor .input-wrapper textarea {
+  width: 100%;
+  font-size: 1.125rem;
+  font-family: "Pretendard", sans-serif;
+  padding: 0.5rem 1rem;
+  border: none;
+}
+.sub.visitor .input-wrapper input + span,
+.sub.visitor .input-wrapper textarea + span {
+  color: white;
+  flex-shrink: 0;
+}
+.sub.visitor .input-wrapper input::-moz-placeholder, .sub.visitor .input-wrapper textarea::-moz-placeholder {
+  color: #c3c3c3;
+}
+.sub.visitor .input-wrapper input::placeholder,
+.sub.visitor .input-wrapper textarea::placeholder {
+  color: #c3c3c3;
+}
+.sub.visitor .input-wrapper textarea {
+  resize: none;
+  width: 100%;
+  margin: 0.75rem 0 0;
+}
+.sub.visitor .input-wrapper .end {
+  color: white;
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
+.sub.visitor .input-wrapper button {
+  display: inline-block;
+  background: #DCD7C0;
+  color: #333;
+  border: none;
+  font-size: 1.125rem;
+  padding: 0.5rem 2.5rem;
+}
 .sub > .back {
   position: absolute;
   top: 1.5rem;
@@ -670,6 +723,22 @@ footer .logos img {
   top: calc(-2.5rem + 18px);
   left: 8%;
 }
+.sub .carousel .article {
+  padding: 0 1rem;
+}
+.sub .carousel .article .wrapper {
+  display: block;
+  max-width: 100%;
+  background: white;
+  padding: 1.5rem 1.25rem;
+}
+.sub .carousel .article .wrapper div {
+  color: #23ABE8;
+  margin-bottom: 1rem;
+}
+.sub .carousel .article .wrapper p {
+  font-size: 1.125rem;
+}
 
 .detail {
   height: 100%;
@@ -717,6 +786,16 @@ footer .logos img {
 }
 .detail.postcard .label {
   background: #00CEA6;
+}
+.detail.visitor {
+  border-color: #23ABE8;
+  background: linear-gradient(0deg, #E7FAFF 0%, #C6E9F2 100%);
+}
+.detail.visitor > .back svg path {
+  fill: #23ABE8;
+}
+.detail.visitor .label {
+  background: #23ABE8;
 }
 .detail > .back {
   position: absolute;
