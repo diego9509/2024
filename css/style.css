@@ -317,23 +317,23 @@ footer .logos img {
   height: 1.75rem;
 }
 
-.info {
+.browser-info {
   display: flex;
   flex-direction: column;
   background: linear-gradient(0deg, #D883A0 0%, #613270 100%);
   color: white;
 }
-.info header {
+.browser-info header {
   width: 100%;
   text-align: center;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   margin: 0;
   padding: 1.5rem 0;
 }
-.info header img {
+.browser-info header img {
   height: 2.75rem;
 }
-.info .content {
+.browser-info .content {
   flex-grow: 1;
   text-align: center;
   display: flex;
@@ -341,32 +341,32 @@ footer .logos img {
   align-items: center;
   justify-content: center;
 }
-.info .content > .align-center {
+.browser-info .content > .align-center {
   justify-content: center;
   gap: 10rem;
 }
-.info p {
+.browser-info p {
   font-size: 1.5rem;
   line-height: 150%;
   margin-bottom: 4rem;
 }
-.info a {
+.browser-info a {
   color: white;
   text-decoration: none;
   font-size: 1.5rem;
   font-weight: 200;
   line-height: 150%;
 }
-.info sub {
+.browser-info sub {
   font-size: 0.875rem;
   margin-top: 10rem;
 }
-.info footer {
+.browser-info footer {
   background: transparent;
   text-align: center;
   padding: 2rem 0;
 }
-.info footer .flex {
+.browser-info footer .flex {
   display: inline-flex;
   gap: 1.5rem;
   width: auto;
@@ -374,7 +374,7 @@ footer .logos img {
   border-radius: 9999px;
   padding: 0.5rem 1.5rem;
 }
-.info footer .flex a {
+.browser-info footer .flex a {
   display: flex;
   align-items: center;
 }
