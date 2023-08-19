@@ -935,6 +935,10 @@ footer .logos img {
 .detail.postcard .label {
   background: #00CEA6;
 }
+.detail.postcard .evenly .image-wrapper img:not(.light) {
+  bottom: 10rem;
+  width: 90%;
+}
 .detail.visitor {
   border-color: #23ABE8;
   background: linear-gradient(0deg, #E7FAFF 0%, #C6E9F2 100%);

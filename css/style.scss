@@ -747,6 +747,14 @@ $inset-shaddow: inset 0 4px 4px rgba(0,0,0,.25);
         .label {
             background: $color;
         }
+        .evenly {
+            .image-wrapper {
+                img:not(.light) {
+                    bottom: 10rem;
+                    width: 90%;
+                }
+            }
+        }
     }
     &.visitor {
         $color: $color-sky;
