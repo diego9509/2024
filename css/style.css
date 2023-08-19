@@ -452,6 +452,9 @@ footer .logos img {
   animation: SlideIn 0.875s cubic-bezier(0.65, 0, 1, 1);
   animation-fill-mode: forwards;
 }
+.main section article.for-mobile {
+  display: none;
+}
 .main section article:before {
   content: "";
   display: inline-block;
@@ -995,7 +998,7 @@ footer .logos img {
   height: calc(100% - 100px);
   background-image: url("../images/img_bg.svg");
   background-repeat: repeat-x;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.375);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.375), inset 0 4px 4px rgba(0, 0, 0, 0.35);
   padding: 0 5rem;
   z-index: 2;
 }
@@ -1239,6 +1242,12 @@ footer .logos img {
   .main section .wrapper .flex article {
     width: 50%;
     animation-delay: 0s !important;
+  }
+  .main section .wrapper .flex article.for-pc {
+    display: none;
+  }
+  .main section .wrapper .flex article.for-mobile {
+    display: block;
   }
   .main section .wrapper .flex article:after {
     display: none;
