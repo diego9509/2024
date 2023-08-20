@@ -774,6 +774,88 @@ footer .logos img {
 .sub.invite .carousel .slick-next {
   right: 1rem;
 }
+.sub.event {
+  border-color: #4068B4;
+  background: linear-gradient(0deg, #F2F7FF 0%, #CDD8ED 100%);
+  overflow-y: auto;
+}
+.sub.event > .back svg path {
+  fill: #4068B4;
+}
+.sub.event .wrapper {
+  width: 1024px;
+  padding-bottom: 5rem;
+}
+.sub.event .wrapper .evenly {
+  flex-grow: 0;
+  margin-bottom: 4rem;
+}
+.sub.event .wrapper .evenly > div:first-of-type {
+  padding: 0 5rem 0 0;
+}
+.sub.event .wrapper .evenly + div {
+  font-size: 1.25rem;
+  line-height: 150%;
+}
+.sub.event .wrapper .evenly + div h4 {
+  margin-bottom: 0;
+}
+.sub.event .input-wrapper {
+  background: #4068B4;
+  text-align: center;
+  padding: 1rem 1.25rem;
+}
+.sub.event .input-wrapper input,
+.sub.event .input-wrapper textarea {
+  width: 100%;
+  font-size: 1.125rem;
+  font-family: "Pretendard", sans-serif;
+  padding: 0.5rem 1rem;
+  border: none;
+}
+.sub.event .input-wrapper input + span,
+.sub.event .input-wrapper textarea + span {
+  color: white;
+  flex-shrink: 0;
+}
+.sub.event .input-wrapper input::-moz-placeholder, .sub.event .input-wrapper textarea::-moz-placeholder {
+  color: #c3c3c3;
+}
+.sub.event .input-wrapper input::placeholder,
+.sub.event .input-wrapper textarea::placeholder {
+  color: #c3c3c3;
+}
+.sub.event .input-wrapper textarea {
+  resize: none;
+  width: 100%;
+  margin: 0.75rem 0 0;
+}
+.sub.event .input-wrapper .end {
+  color: white;
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
+.sub.event .input-wrapper button {
+  display: inline-block;
+  background: #DCD7C0;
+  color: #333;
+  border: none;
+  font-size: 1.125rem;
+  padding: 0.5rem 2.5rem;
+}
+.sub.event .carousel {
+  padding: 0;
+}
+.sub.event .carousel .slick-prev,
+.sub.event .carousel .slick-next {
+  top: 50%;
+}
+.sub.event .carousel .slick-prev {
+  left: 1rem;
+}
+.sub.event .carousel .slick-next {
+  right: 1rem;
+}
 .sub > .back {
   position: absolute;
   top: 1.5rem;

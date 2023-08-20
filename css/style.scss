@@ -332,6 +332,7 @@ $color-green: #93D600;
 $color-mint: #00CEA6;
 $color-sky: #23ABE8;
 $color-violet: #7E2D9C;
+$color-blue: #4068B4;
 $inset-shaddow: inset 0 4px 4px rgba(0,0,0,.25);
 
 .slick-prev,
@@ -493,6 +494,86 @@ $inset-shaddow: inset 0 4px 4px rgba(0,0,0,.25);
         $color: $color-violet;
         border-color: $color;
         background: linear-gradient(0deg, #F3E6F9 0%, #E3C3EF 100%);
+        overflow-y: auto;
+        > .back {
+            svg path {
+                fill: $color;
+            }
+        }
+        .wrapper {
+            width: 1024px;
+            padding-bottom: 5rem;
+            .evenly {
+                flex-grow: 0;
+                margin-bottom: 4rem;
+                > div:first-of-type {
+                    padding: 0 5rem 0 0;
+                }
+                & + div {
+                    font-size: 1.25rem;
+                    line-height: 150%;
+                    h4 {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+        .input-wrapper {
+            background: $color;
+            text-align: center;
+            padding: 1rem 1.25rem;
+            input,
+            textarea {
+                width: 100%;
+                font-size: 1.125rem;
+                font-family: "Pretendard", sans-serif;
+                padding: .5rem 1rem;
+                border: none;
+                & + span {
+                    color: white;
+                    flex-shrink: 0;
+                }
+                &::placeholder {
+                    color: #c3c3c3;
+                }
+            }
+            textarea {
+                resize: none;
+                width: 100%;
+                margin: .75rem 0 0;
+            }
+            .end {
+                color: white;
+                font-size: .875rem;
+                margin-bottom: 1rem;
+            }
+            button {
+                display: inline-block;
+                background: #DCD7C0;
+                color: #333;
+                border: none;
+                font-size: 1.125rem;
+                padding: .5rem 2.5rem;
+            }
+        }
+        .carousel {
+            padding: 0;
+            .slick-prev, 
+            .slick-next {
+                top: 50%;
+            }
+            .slick-prev {
+                left: 1rem;
+            }
+            .slick-next {
+                right: 1rem;
+            }
+        }
+    }
+    &.event {
+        $color: $color-blue;
+        border-color: $color;
+        background: linear-gradient(0deg, #F2F7FF 0%, #CDD8ED 100%);
         overflow-y: auto;
         > .back {
             svg path {
