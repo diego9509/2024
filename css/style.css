@@ -228,6 +228,9 @@ body {
 .flex {
   display: flex;
 }
+.flex.center {
+  justify-content: center;
+}
 .flex.end {
   justify-content: end;
 }
@@ -391,6 +394,116 @@ footer .logos img {
 }
 .button-event img {
   width: 100%;
+}
+
+.pop-event {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background: white;
+  border-top: 0.875rem solid #4068B4;
+  box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
+  z-index: 5;
+  padding: 1.75rem 2rem;
+}
+.pop-event button {
+  cursor: pointer;
+}
+.pop-event .between {
+  margin-bottom: 1rem;
+}
+.pop-event .between h4 {
+  font-size: 1.5rem;
+  color: #4068B4;
+  padding: 0.5rem 0 0.5rem 5rem;
+  background: url("data:image/svg+xml,%3Csvg width='69' height='33' viewBox='0 0 69 33' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_195_23361)'%3E%3Cpath d='M27.89 1.15039H4.97002C2.8603 1.15039 1.15002 2.86066 1.15002 4.97039V27.8904C1.15002 30.0001 2.8603 31.7104 4.97002 31.7104H27.89C29.9998 31.7104 31.71 30.0001 31.71 27.8904V4.97039C31.71 2.86066 29.9998 1.15039 27.89 1.15039Z' stroke='%234068B4' stroke-width='2.29' stroke-miterlimit='10'/%3E%3Cpath d='M63.36 1.15039H40.44C38.3303 1.15039 36.62 2.86066 36.62 4.97039V27.8904C36.62 30.0001 38.3303 31.7104 40.44 31.7104H63.36C65.4697 31.7104 67.18 30.0001 67.18 27.8904V4.97039C67.18 2.86066 65.4697 1.15039 63.36 1.15039Z' stroke='%234068B4' stroke-width='2.29' stroke-miterlimit='10'/%3E%3Cpath d='M23.96 10.8597V20.7397C23.96 21.4797 23.34 21.8197 22.73 21.8197C22.12 21.8197 21.47 21.4897 21.47 20.7397V11.6997C21.47 11.3097 21.35 11.1597 20.95 11.1597H10.02C9.40001 11.1597 9.13 10.6697 9.13 10.0597C9.13 9.44969 9.40001 8.92969 10.02 8.92969H22.07C23.5 8.92969 23.97 9.38969 23.97 10.8497L23.96 10.8597Z' fill='%234068B4'/%3E%3Cpath d='M48.13 9.67961V18.6896C48.13 19.0996 48.28 19.2296 48.65 19.2296H59.42C60.01 19.2296 60.28 19.7396 60.28 20.3296C60.28 20.9196 60.01 21.4296 59.42 21.4296H47.52C46.09 21.4296 45.62 20.9696 45.62 19.5096V9.67961C45.62 8.93961 46.24 8.59961 46.88 8.59961C47.52 8.59961 48.14 8.92961 48.14 9.67961H48.13Z' fill='%234068B4'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_195_23361'%3E%3Crect width='68.32' height='32.85' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A") no-repeat left center;
+  margin: 0;
+  margin-right: 4rem;
+}
+.pop-event .between .close {
+  width: 2rem;
+  height: 2rem;
+  background: url("data:image/svg+xml,%3Csvg width='34' height='34' viewBox='0 0 34 34' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='1.75861' width='45.5962' height='2.48707' transform='rotate(45 1.75861 0)' fill='%23D9D9D9'/%3E%3Crect y='32.2412' width='45.5962' height='2.48707' transform='rotate(-45 0 32.2412)' fill='%23D9D9D9'/%3E%3C/svg%3E%0A") no-repeat center;
+  border: none;
+  text-indent: -9999px;
+}
+.pop-event p {
+  color: #848484;
+  line-height: 150%;
+  text-align: center;
+}
+.pop-event p.desc {
+  font-size: 0.75rem;
+}
+.pop-event hr {
+  border: none;
+  height: 1px;
+  background: #bfbfbf;
+  margin: 2rem 0 1.5rem;
+}
+.pop-event .row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+.pop-event .row > div {
+  width: 3.125rem;
+  height: 3.125rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f5f5f5;
+  color: transparent;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+.pop-event .row > div.is-active {
+  color: #4068B4;
+}
+.pop-event .row > div.blank {
+  margin-right: 1rem;
+}
+.pop-event input,
+.pop-event textarea {
+  width: 100%;
+  display: block;
+  border: 1px solid #848484;
+  border-radius: 1.25rem;
+  font-size: 1rem;
+  text-align: center;
+  margin: 0.5rem 0;
+  padding: 0.5rem 1rem;
+  resize: none;
+}
+.pop-event label {
+  width: 100%;
+  display: flex;
+  font-size: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+.pop-event label input {
+  width: initial;
+  margin-right: 0.5rem;
+}
+.pop-event ul {
+  list-style: none;
+  font-size: 0.75rem;
+  border: 1px solid #bfbfbf;
+  border-width: 1px 0;
+  color: #424242;
+  text-align: center;
+  padding: 0.5rem 0;
+  line-height: 150%;
+}
+.pop-event .submit {
+  background: #4068B4;
+  border: none;
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 700;
+  padding: 0.75rem 2rem;
+  margin-top: 1rem;
 }
 
 .main {
