@@ -1027,7 +1027,7 @@ footer .logos img {
 }
 .sub .list > div {
   text-align: center;
-  flex: 1 0 auto;
+  flex: 0 0 15%;
 }
 .sub .list > div .image-wrapper {
   width: 100%;
