@@ -27,6 +27,10 @@ body {
     font-family: 'Pretendard', sans-serif;
 }
 
+button {
+    cursor: pointer;
+}
+
 @import "./intro.scss";
 
 .flex {
@@ -211,7 +215,7 @@ footer {
     padding: 1.75rem 2rem;
     transform: translateY(100%);
     transition: .75s cubic-bezier(0.075, 0.82, 0.165, 1);
-    &.is-shown {
+    &.is-n {
         transform: translateY(0);
     }
     button {
@@ -1313,6 +1317,50 @@ footer {
         p,
         label {
             font-size: .875rem;
+        }
+    }
+    .intro {
+        h1 {
+            padding: 0 2rem;
+            svg {
+                width: 100%;
+            }
+        }
+        .logos {
+            gap: 1rem;
+            img {
+                height: 1.25rem;
+            }
+        }
+        .show-second {
+            justify-content: start;
+            padding-top: 2rem;
+            svg {
+                width: 80%;
+                height: auto;
+            }
+            p {
+                font-size: .875rem;
+                margin: 2rem 0 1rem;
+            }
+        }
+        .img {
+            &.mountain {
+                &.left {
+                    transform: translate(-50%, 0) !important;
+                }
+                &.right {
+                    transform: translate(50%, 0) !important;
+                }
+            }
+            &.people {
+                &.left {
+                    left: 0%;
+                }
+                &.right {
+                    right: 0%;
+                }
+            }
         }
     }
     .main {
