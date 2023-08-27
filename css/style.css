@@ -405,6 +405,11 @@ footer .logos img {
   box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
   z-index: 5;
   padding: 1.75rem 2rem;
+  transform: translateY(100%);
+  transition: 0.75s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.pop-event.is-shown {
+  transform: translateY(0);
 }
 .pop-event button {
   cursor: pointer;
@@ -1431,6 +1436,19 @@ footer .logos img {
     width: 4rem;
     height: 4rem;
     bottom: 2rem;
+  }
+  .pop-event {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    padding: 1rem 1.5rem;
+  }
+  .pop-event .between h4 {
+    font-size: 1.25rem;
+  }
+  .pop-event p,
+  .pop-event label {
+    font-size: 0.875rem;
   }
   .main {
     max-height: 100%;
