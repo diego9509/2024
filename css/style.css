@@ -888,47 +888,15 @@ footer .logos img {
   margin-bottom: 0;
 }
 .sub.invite .input-wrapper {
-  background: #7E2D9C;
   text-align: center;
   padding: 1rem 1.25rem;
 }
-.sub.invite .input-wrapper input,
-.sub.invite .input-wrapper textarea {
+.sub.invite .input-wrapper img {
   width: 100%;
-  font-size: 1.125rem;
-  font-family: "Pretendard", sans-serif;
-  padding: 0.5rem 1rem;
-  border: none;
+  margin-bottom: 2rem;
 }
-.sub.invite .input-wrapper input + span,
-.sub.invite .input-wrapper textarea + span {
-  color: white;
-  flex-shrink: 0;
-}
-.sub.invite .input-wrapper input::-moz-placeholder, .sub.invite .input-wrapper textarea::-moz-placeholder {
-  color: #c3c3c3;
-}
-.sub.invite .input-wrapper input::placeholder,
-.sub.invite .input-wrapper textarea::placeholder {
-  color: #c3c3c3;
-}
-.sub.invite .input-wrapper textarea {
-  resize: none;
-  width: 100%;
-  margin: 0.75rem 0 0;
-}
-.sub.invite .input-wrapper .end {
-  color: white;
-  font-size: 0.875rem;
-  margin-bottom: 1rem;
-}
-.sub.invite .input-wrapper button {
-  display: inline-block;
-  background: #DCD7C0;
-  color: #333;
-  border: none;
-  font-size: 1.125rem;
-  padding: 0.5rem 2.5rem;
+.sub.invite .input-wrapper div {
+  margin-bottom: 0.5rem;
 }
 .sub.invite .carousel {
   padding: 0;
