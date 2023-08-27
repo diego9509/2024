@@ -49,7 +49,7 @@ button {
 .fires svg:first-of-type {
   width: 400px;
   top: 4rem;
-  left: 2rem;
+  left: 0;
 }
 .fires svg:nth-of-type(2) {
   width: 150px;
@@ -1531,7 +1531,7 @@ footer .logos img {
   }
   .fires svg:first-of-type {
     width: 200px;
-    left: 1rem;
+    left: -70px;
   }
   .fires svg:nth-of-type(3) {
     top: 18rem;
