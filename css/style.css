@@ -1746,4 +1746,14 @@ footer .logos img {
   .detail .slick-next {
     right: 0.5rem;
   }
+  .modal {
+    width: 100%;
+  }
+  .modal img {
+    height: auto;
+    width: 100%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }/*# sourceMappingURL=style.css.map */

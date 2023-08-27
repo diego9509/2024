@@ -1601,4 +1601,14 @@ footer {
             right: .5rem;
         }
     }
+    .modal {
+        width: 100%;
+        img {
+            height: auto;
+            width: 100%;
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
 }
