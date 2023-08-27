@@ -718,6 +718,9 @@ footer {
                 margin-bottom: 4rem;
                 > div:first-of-type {
                     padding: 0 5rem 0 0;
+                    p + p {
+                        margin-top: 3rem;
+                    }
                 }
                 & + div {
                     font-size: 1.25rem;
@@ -1227,7 +1230,8 @@ footer {
 }
 
 @media (max-width: 1080px) {
-    .sub.invite {
+    .sub.invite,
+    .sub.event {
         .wrapper {
             width: 100%;
         }
@@ -1270,7 +1274,7 @@ footer {
                 height: 2rem;
             }
             p {
-                font: 1rem;
+                font-size: 1rem;
             }
             .evenly {
                 > div {
@@ -1524,7 +1528,7 @@ footer {
     }
     .sub {
         .wrapper {
-            padding: 0 2rem;
+            padding: 0 1.5rem;
             .logo {
                 display: none;
             }
@@ -1532,9 +1536,10 @@ footer {
                 height: 2rem;
             }
             p {
-                font: 1rem;
+                font-size: .875rem;
             }
             .evenly {
+                padding-top: 6rem;
                 > div {
                     width: 100%;
                     &:first-of-type {
@@ -1542,15 +1547,11 @@ footer {
                     }
                 }
                 .menu-image {
+                    display: none;
                     width: 25%;
                     position: absolute;
                     top: 1.5rem;
                     right: 2rem;
-                }
-            }
-            .carousel {
-                img {
-                    box-shadow: none;
                 }
             }
         }
@@ -1558,6 +1559,19 @@ footer {
             padding: 0 2rem;
             > div {
                 flex: 0 0 45%;
+            }
+        }
+        &.event {
+            .wrapper {
+                .evenly {
+                    > div:first-of-type {
+                        padding: 0;
+                    }
+                }
+                .flex.between {
+                    flex-direction: column;
+                    gap: 2rem;
+                }
             }
         }
     }

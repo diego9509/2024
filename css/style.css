@@ -962,6 +962,9 @@ footer .logos img {
 .sub.event .wrapper .evenly > div:first-of-type {
   padding: 0 5rem 0 0;
 }
+.sub.event .wrapper .evenly > div:first-of-type p + p {
+  margin-top: 3rem;
+}
 .sub.event .wrapper .evenly + div {
   font-size: 1.25rem;
   line-height: 150%;
@@ -1420,7 +1423,8 @@ footer .logos img {
   }
 }
 @media (max-width: 1080px) {
-  .sub.invite .wrapper {
+  .sub.invite .wrapper,
+  .sub.event .wrapper {
     width: 100%;
   }
   .sub .list {
@@ -1451,7 +1455,7 @@ footer .logos img {
     height: 2rem;
   }
   .sub .wrapper p {
-    font: 1rem;
+    font-size: 1rem;
   }
   .sub .wrapper .evenly > div {
     width: 70%;
@@ -1678,7 +1682,7 @@ footer .logos img {
     border-left: 1px solid #aaa;
   }
   .sub .wrapper {
-    padding: 0 2rem;
+    padding: 0 1.5rem;
   }
   .sub .wrapper .logo {
     display: none;
@@ -1687,7 +1691,10 @@ footer .logos img {
     height: 2rem;
   }
   .sub .wrapper p {
-    font: 1rem;
+    font-size: 0.875rem;
+  }
+  .sub .wrapper .evenly {
+    padding-top: 6rem;
   }
   .sub .wrapper .evenly > div {
     width: 100%;
@@ -1696,19 +1703,24 @@ footer .logos img {
     padding: 3rem 0 0 0;
   }
   .sub .wrapper .evenly .menu-image {
+    display: none;
     width: 25%;
     position: absolute;
     top: 1.5rem;
     right: 2rem;
-  }
-  .sub .wrapper .carousel img {
-    box-shadow: none;
   }
   .sub .list {
     padding: 0 2rem;
   }
   .sub .list > div {
     flex: 0 0 45%;
+  }
+  .sub.event .wrapper .evenly > div:first-of-type {
+    padding: 0;
+  }
+  .sub.event .wrapper .flex.between {
+    flex-direction: column;
+    gap: 2rem;
   }
   .detail .wrapper {
     padding: 0;
