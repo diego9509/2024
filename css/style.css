@@ -37,6 +37,46 @@ button {
   opacity: 0.5;
 }
 
+.fires {
+  position: fixed;
+  z-index: 4;
+  width: 100%;
+  height: 100%;
+}
+.fires svg {
+  position: absolute;
+}
+.fires svg:first-of-type {
+  width: 400px;
+  top: 4rem;
+  left: 2rem;
+}
+.fires svg:nth-of-type(2) {
+  width: 150px;
+  top: 2rem;
+  right: 4rem;
+}
+.fires svg:nth-of-type(3) {
+  width: 360px;
+  top: 14rem;
+  left: 50%;
+}
+.fires svg:nth-of-type(4) {
+  width: 90px;
+  top: 16rem;
+  right: 20%;
+}
+.fires svg:nth-of-type(5) {
+  width: 200px;
+  top: 6rem;
+  right: 30%;
+}
+.fires svg:nth-of-type(6) {
+  width: 600px;
+  top: 10rem;
+  left: 10%;
+}
+
 .controls,
 .menu {
   display: none;
@@ -1488,6 +1528,22 @@ footer .logos img {
   }
   .intro .img.people.right {
     right: 0%;
+  }
+  .fires svg:first-of-type {
+    width: 200px;
+    left: 1rem;
+  }
+  .fires svg:nth-of-type(3) {
+    top: 18rem;
+    left: 20%;
+  }
+  .fires svg:nth-of-type(5) {
+    top: 14rem;
+    width: 150px;
+    right: 10px;
+  }
+  .fires svg:nth-of-type(even) {
+    display: none;
   }
   .main {
     max-height: 100%;
