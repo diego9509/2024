@@ -1073,6 +1073,9 @@ footer .logos img {
   gap: 2rem;
   padding: 0 5rem;
 }
+.sub .list.last {
+  justify-content: flex-start;
+}
 .sub .list > div {
   text-align: center;
   flex: 0 0 15%;
@@ -1382,12 +1385,21 @@ footer .logos img {
   .sub .wrapper p {
     font-size: 0.875rem;
   }
+  .sub .list {
+    padding: 0 4rem;
+  }
+  .sub .list > div {
+    flex: 0 0 17.5%;
+  }
   .detail .wrapper {
     width: 100%;
     padding: 0 4rem;
   }
 }
 @media (max-width: 1280px) {
+  .sub .list > div {
+    flex: 0 0 20%;
+  }
   .detail .wrapper .evenly > div:first-of-type {
     padding: 0;
   }
@@ -1402,6 +1414,12 @@ footer .logos img {
 @media (max-width: 1080px) {
   .sub.invite .wrapper {
     width: 100%;
+  }
+  .sub .list {
+    padding: 0 3rem;
+  }
+  .sub .list > div {
+    flex: 0 0 30%;
   }
   footer .flex img {
     width: 8rem;
@@ -1677,6 +1695,12 @@ footer .logos img {
   }
   .sub .wrapper .carousel img {
     box-shadow: none;
+  }
+  .sub .list {
+    padding: 0 2rem;
+  }
+  .sub .list > div {
+    flex: 0 0 45%;
   }
   .detail .wrapper {
     padding: 0;

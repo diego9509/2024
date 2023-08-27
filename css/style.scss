@@ -827,6 +827,9 @@ footer {
         align-items: end;
         gap: 2rem;
         padding: 0 5rem;
+        &.last {
+            justify-content: flex-start;
+        }
         > div {
             text-align: center;
             flex: 0 0 15%;
@@ -1172,6 +1175,12 @@ footer {
                 font-size: .875rem;
             }
         }
+        .list {
+            padding: 0 4rem;
+            > div {
+                flex: 0 0 17.5%;
+            }
+        }
     }
     .detail {
         .wrapper {
@@ -1182,6 +1191,13 @@ footer {
 }
 
 @media (max-width: 1280px) {
+    .sub {
+        .list {
+            > div {
+                flex: 0 0 20%;
+            }
+        }
+    }
     .detail {
         .wrapper {
             .evenly {
@@ -1206,6 +1222,14 @@ footer {
     .sub.invite {
         .wrapper {
             width: 100%;
+        }
+    }
+    .sub {
+        .list {
+            padding: 0 3rem;
+            > div {
+                flex: 0 0 30%;
+            }
         }
     }
     footer {
@@ -1520,6 +1544,12 @@ footer {
                 img {
                     box-shadow: none;
                 }
+            }
+        }
+        .list {
+            padding: 0 2rem;
+            > div {
+                flex: 0 0 45%;
             }
         }
     }
