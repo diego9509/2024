@@ -1063,18 +1063,11 @@ footer {
                 transform-origin: top center;
                 border-radius: 9999px;
             }
-            .light {
-                position: relative;
-                top: -5%;
-                z-index: 2;
-                width: 100%;
-                margin: 0 auto;
-            }
             img:not(.light) {
                 position: absolute;
-                bottom: 2rem;
+                top: 50%;
                 left: 50%;
-                transform: translateX(-50%);
+                transform: translate(-50%, -50%);
                 width: 75%;
                 z-index: 1;
             }
