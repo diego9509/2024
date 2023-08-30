@@ -97,7 +97,7 @@ button {
   z-index: 9999;
 }
 .intro .show-first {
-  background: #27275A;
+  background: linear-gradient(0deg, #b87598 10%, #703678 100%);
   height: 100%;
   animation: fadeOut 1s ease-in forwards;
 }
@@ -199,6 +199,32 @@ button {
   left: 60%;
   background-image: url("../images/img-people02.png");
   animation-delay: 0.35s;
+}
+.intro .sponsers {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 101;
+  list-style: none;
+  color: white;
+  margin: 0;
+}
+.intro .sponsers li {
+  display: flex;
+  align-items: center;
+}
+.intro .sponsers li + li {
+  margin-top: 1rem;
+}
+.intro .sponsers li img {
+  height: 1rem;
+}
+.intro .sponsers li img + img {
+  margin-left: 1rem;
+}
+.intro .sponsers li strong {
+  font-size: 0.875rem;
+  margin-right: 1rem;
 }
 
 @keyframes wallSlideIn {
@@ -1359,6 +1385,9 @@ footer .logos img {
   .sub .list > div {
     flex: 0 0 17.5%;
   }
+  .sub .list .article {
+    flex: 0 0 20%;
+  }
   .detail .wrapper {
     width: 100%;
     padding: 0 4rem;
@@ -1509,6 +1538,26 @@ footer .logos img {
   .intro .img.people.right {
     right: 0%;
   }
+  .intro .sponsers {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    background: #897f76;
+    padding: 0.75rem 2rem;
+  }
+  .intro .sponsers li:first-of-type {
+    margin-right: 2rem;
+  }
+  .intro .sponsers li:last-of-type {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .intro .sponsers li + li {
+    margin: 0;
+  }
   .fires svg:first-of-type {
     width: 200px;
     left: -70px;
@@ -1534,7 +1583,8 @@ footer .logos img {
     padding: 0.75rem 0;
   }
   .main header h2 {
-    display: block;
+    display: flex;
+    justify-content: center;
     margin: 0;
   }
   .main header h2 img {

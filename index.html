@@ -90,10 +90,30 @@
         <div class="img wall"></div>
         <div class="img people left"></div>
         <div class="img people right"></div>
+        <ul class="sponsers">
+            <li>
+                <strong>주최</strong>
+                <img src="images/logo_moe.svg" alt="교육부" />
+            </li>
+            <li>
+                <strong>주관</strong>
+                <img src="images/logo_nile.svg" alt="국가평생교육진흥원" />
+            </li>
+            <li>
+                <strong>후원</strong>
+                <img src="images/img_logo_hana.svg" alt="하나은행" />
+                <img src="images/img_logo_loreal.png" alt="로레알" />
+                <img src="images/img_logo_stadler.svg" alt="스테들러" />
+                <img src="images/img_logo_unesco.png" alt="unesco" />
+            </li>
+        </ul>
     </div>
 </body>
 <script>
     $(document).ready(function(){
+        setTimeout(()=>{
+            $(".show-first").css('display', 'none');
+        })
         for (var i = 0; i < 6; i++) {
             var random = Math.floor(Math.random() * 1000) + 1;
             var delay = i * 1000 + random;

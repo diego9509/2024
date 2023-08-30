@@ -1153,6 +1153,9 @@ footer {
             > div {
                 flex: 0 0 17.5%;
             }
+            .article {
+                flex: 0 0 20%;
+            }
         }
     }
     .detail {
@@ -1353,6 +1356,28 @@ footer {
                 }
             }
         }
+        .sponsers {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            background: #897f76;
+            padding: .75rem 2rem;
+            li {
+                &:first-of-type {
+                    margin-right: 2rem;
+                }
+                &:last-of-type {
+                    width: 100%;
+                    margin-top: 1rem;
+                }
+                & + li {
+                    margin: 0;
+                }
+            }
+        }
     }
     .fires {
         svg {
@@ -1381,7 +1406,8 @@ footer {
             justify-content: center !important;
             padding: .75rem 0;
             h2 {
-                display: block;
+                display: flex;
+                justify-content: center;
                 margin: 0;
                 img {
                     height: 100%;
