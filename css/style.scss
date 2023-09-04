@@ -1154,7 +1154,7 @@ footer {
                 flex: 0 0 17.5%;
             }
             .article {
-                flex: 0 0 20%;
+                flex: 0 0 30%;
             }
         }
     }
@@ -1171,6 +1171,9 @@ footer {
         .list {
             > div {
                 flex: 0 0 20%;
+            }
+            .article {
+                flex: 0 0 30%;
             }
         }
     }
@@ -1205,6 +1208,9 @@ footer {
         .list {
             padding: 0 3rem;
             > div {
+                flex: 0 0 30%;
+            }
+            .article {
                 flex: 0 0 30%;
             }
         }

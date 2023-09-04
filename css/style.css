@@ -1386,7 +1386,7 @@ footer .logos img {
     flex: 0 0 17.5%;
   }
   .sub .list .article {
-    flex: 0 0 20%;
+    flex: 0 0 30%;
   }
   .detail .wrapper {
     width: 100%;
@@ -1396,6 +1396,9 @@ footer .logos img {
 @media (max-width: 1280px) {
   .sub .list > div {
     flex: 0 0 20%;
+  }
+  .sub .list .article {
+    flex: 0 0 30%;
   }
   .detail .wrapper .evenly > div:first-of-type {
     padding: 0;
@@ -1417,6 +1420,9 @@ footer .logos img {
     padding: 0 3rem;
   }
   .sub .list > div {
+    flex: 0 0 30%;
+  }
+  .sub .list .article {
     flex: 0 0 30%;
   }
   footer .flex img {
