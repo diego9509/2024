@@ -1789,4 +1789,9 @@ footer .logos img {
     top: 50%;
     transform: translateY(-50%);
   }
+}
+@media (max-width: 576px) {
+  .sub .list .article {
+    flex: 0 0 80%;
+  }
 }/*# sourceMappingURL=style.css.map */
