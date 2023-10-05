@@ -810,6 +810,10 @@ footer .logos img {
   background: url("data:image/svg+xml,%3Csvg width='56' height='87' viewBox='0 0 56 87' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg filter='url(%23filter0_d_31_34664)'%3E%3Cpath d='M3.84 10.6601L33.5401 40.3601L3.84 70.0601C3.06 70.8401 3.06 72.1101 3.84 72.8901L8.08 77.1301C8.85999 77.9101 10.1301 77.9101 10.9101 77.1301L42.0201 46.0201L46.26 41.7801C47.04 41.0001 47.04 39.7301 46.26 38.9501L42.0201 34.7101L10.9101 3.60014C10.1301 2.82014 8.85999 2.82014 8.08 3.60014L3.84 7.84014C3.06 8.62014 3.06 9.89014 3.84 10.6701V10.6601Z' fill='white'/%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='filter0_d_31_34664' x='0.255005' y='0.0151367' width='55.59' height='86.7002' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0' result='hardAlpha'/%3E%3CfeOffset dx='3' dy='3'/%3E%3CfeGaussianBlur stdDeviation='3'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0'/%3E%3CfeBlend mode='normal' in2='BackgroundImageFix' result='effect1_dropShadow_31_34664'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='effect1_dropShadow_31_34664' result='shape'/%3E%3C/filter%3E%3C/defs%3E%3C/svg%3E%0A") no-repeat center/contain;
 }
 
+.slick-prev:focus, .slick-next:focus {
+  outline: 1px solid blue;
+}
+
 .video {
   width: 100%;
   margin: 1rem auto 5rem;
