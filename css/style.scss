@@ -1156,6 +1156,9 @@ footer {
         top: 1rem;
         right: 1rem;
         background-image: url("data:image/svg+xml,%3Csvg width='72' height='72' viewBox='0 0 72 72' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg filter='url(%23filter0_d_36_27425)'%3E%3Cpath d='M38.2041 33.2055L61.585 9.82462C62.199 9.21057 62.199 8.21079 61.585 7.59674L58.2471 4.25887C57.633 3.64483 56.6333 3.64483 56.0192 4.25887L32.725 27.5531L9.4307 4.25887C8.81665 3.64483 7.81687 3.64483 7.20282 4.25887L3.86495 7.59674C3.25091 8.21079 3.25091 9.21057 3.86495 9.82462L27.2458 33.2055L3.86495 56.5863C3.25091 57.2004 3.25091 58.2002 3.86495 58.8142L7.20282 62.1521C7.81687 62.7661 8.81665 62.7661 9.4307 62.1521L32.725 38.8578L56.0192 62.1521C56.6333 62.7661 57.633 62.7661 58.2471 62.1521L61.585 58.8142C62.199 58.2002 62.199 57.2004 61.585 56.5863L38.2041 33.2055Z' fill='white'/%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='filter0_d_36_27425' x='0.404419' y='0.79834' width='70.6411' height='70.8145' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0' result='hardAlpha'/%3E%3CfeOffset dx='3' dy='3'/%3E%3CfeGaussianBlur stdDeviation='3'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0'/%3E%3CfeBlend mode='normal' in2='BackgroundImageFix' result='effect1_dropShadow_36_27425'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='effect1_dropShadow_36_27425' result='shape'/%3E%3C/filter%3E%3C/defs%3E%3C/svg%3E%0A");
+        &:focus {
+            outline: 1px solid blue;
+        }
     }
     img {
         height: 100%;
