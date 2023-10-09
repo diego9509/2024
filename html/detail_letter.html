@@ -26,7 +26,9 @@
                     <article class="flex evenly align-start">
                         <div>
                             <div class="image-wrapper">
-                                <a href="#ex1" rel="modal:open"><img src="../images/img_sample_01.png" /></a>
+                                <a href="#ex1" rel="modal:open" onclick="focusControl(0)">
+                                    <img src="../images/img_sample_01.png" />
+                                </a>
                             </div>
                             <div class="image-wrapper-bottom"></div>
                         </div>
@@ -95,11 +97,26 @@
 </body>
 <script>
 $(document).ready(function(){
-  $('.carousel').slick({
-    dots: false,
-    slidesToShow: 1,
-    infinite: true,
-  });
+    $('.carousel').slick({
+        dots: false,
+        slidesToShow: 1,
+        infinite: true,
+    });
+
+    var target = $('.slick-current');
+
+    function focusControl(val) {
+        $('.back').attr('tabindex', val)
+        target.find('button').attr('tabindex', val)
+        target.find('a').attr('tabindex', val)
+    }
+
+    $('#ex1').on($.modal.OPEN, function(event, modal) {
+        focusControl(-1);
+    });
+    $('#ex1').on($.modal.CLOSE, function(event, modal) {
+        focusControl(0);
+    });
 });
 </script>
 </html>

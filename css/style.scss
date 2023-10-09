@@ -1104,6 +1104,9 @@ footer {
                 width: 75%;
                 z-index: 1;
             }
+            a:focus {
+                outline: 1px solid blue;
+            }
         }
         .logo {
             height: 5.625rem;

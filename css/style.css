@@ -1348,6 +1348,9 @@ footer .logos img {
   width: 75%;
   z-index: 1;
 }
+.detail .evenly .image-wrapper a:focus {
+  outline: 1px solid blue;
+}
 .detail .evenly .logo {
   height: 5.625rem;
   margin: 5.5rem 0 6.75rem;
