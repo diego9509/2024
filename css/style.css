@@ -475,7 +475,7 @@ footer .logos img {
 }
 .main section .wrapper h2 {
   position: absolute;
-  top: 6rem;
+  top: 2rem;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
@@ -866,6 +866,7 @@ footer .logos img {
   width: 2.5rem;
   height: 2.5rem;
   filter: drop-shadow(0 1px 2px rgba(50, 50, 0, 0.25));
+  z-index: 3;
 }
 .sub > .back svg {
   width: 100%;
@@ -896,17 +897,20 @@ footer .logos img {
 }
 .sub .wrapper .evenly {
   flex: 1;
+  align-items: stretch;
   margin-bottom: 4rem;
   padding-top: 4rem;
+  gap: 2rem;
 }
 .sub .wrapper .evenly > div {
   width: 50%;
 }
-.sub .wrapper .evenly > div:first-of-type {
-  padding-left: 10rem;
+.sub .wrapper .evenly .menu-image {
+  display: flex;
+  justify-content: flex-end;
 }
 .sub .wrapper .evenly .menu-image img {
-  width: 512px;
+  height: 100%;
 }
 .sub .list {
   display: flex;
@@ -1432,22 +1436,6 @@ footer .logos img {
   .intro .sponsers li + li {
     margin: 0;
   }
-  .fires svg:first-of-type {
-    width: 200px;
-    left: -70px;
-  }
-  .fires svg:nth-of-type(3) {
-    top: 18rem;
-    left: 20%;
-  }
-  .fires svg:nth-of-type(5) {
-    top: 14rem;
-    width: 150px;
-    right: 10px;
-  }
-  .fires svg:nth-of-type(even) {
-    display: none;
-  }
   .main {
     max-height: 100%;
   }
@@ -1478,20 +1466,21 @@ footer .logos img {
     aspect-ratio: initial;
   }
   .main section .wrapper h2 {
-    display: none;
+    position: relative;
+    top: initial;
+    left: initial;
+    transform: none;
   }
   .main section .wrapper .flex {
+    flex: 1 0 auto;
     flex-wrap: wrap;
-    height: 25%;
     width: 100%;
     position: initial;
+    height: initial;
     padding: 0 1rem;
   }
-  .main section .wrapper .flex:last-of-type {
-    height: 50%;
-  }
-  .main section .wrapper .flex:last-of-type article {
-    height: 50%;
+  .main section .wrapper .flex:not(:first-of-type) {
+    margin-top: 0;
   }
   .main section .wrapper .flex article {
     width: 50%;
@@ -1562,6 +1551,12 @@ footer .logos img {
   .main footer > .flex:not(.align-center) a:last-of-type {
     border-left: 1px solid #aaa;
   }
+  .sub:before {
+    display: none;
+  }
+  .sub .back {
+    top: 0;
+  }
   .sub .wrapper {
     padding: 0 1.5rem;
   }
@@ -1575,26 +1570,27 @@ footer .logos img {
     font-size: 0.875rem;
   }
   .sub .wrapper .evenly {
-    padding-top: 6rem;
+    flex-direction: column;
+    padding-top: 2rem;
   }
   .sub .wrapper .evenly > div {
     width: 100%;
   }
-  .sub .wrapper .evenly > div:first-of-type {
-    padding: 3rem 0 0 0;
-  }
   .sub .wrapper .evenly .menu-image {
-    display: none;
-    width: 25%;
-    position: absolute;
-    top: 1.5rem;
-    right: 2rem;
+    justify-content: center;
+    width: 100%;
+  }
+  .sub .wrapper .evenly .menu-image img {
+    height: 16rem;
   }
   .sub .list {
-    padding: 0 2rem;
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+    padding: 0;
   }
   .sub .list > div {
-    flex: 0 0 45%;
+    flex: 0 0 50%;
+    padding: 0 0.5rem;
   }
   .sub.event .wrapper .evenly > div:first-of-type {
     padding: 0;

@@ -491,7 +491,7 @@ footer {
             }
             h2 {
                 position: absolute;
-                top: 6rem;
+                top: 2rem;
                 left: 50%;
                 transform: translateX(-50%);
                 text-align: center;
@@ -881,6 +881,7 @@ footer {
         width: 2.5rem;
         height: 2.5rem;
         filter: drop-shadow(0 1px 2px rgba(50, 50, 0, 0.25));
+        z-index: 3;
         svg {
             width: 100%;
         }
@@ -910,16 +911,22 @@ footer {
         }
         .evenly {
             flex: 1;
+            align-items: stretch;
             margin-bottom: 4rem;
             padding-top: 4rem;
+            gap: 2rem;
             > div {
                 width: 50%;
-                &:first-of-type {
-                    padding-left: 10rem;
-                }
+                // &:first-of-type {
+                //     padding-left: 10rem;
+                // }
             }
-            .menu-image img {
-                width: 512px;
+            .menu-image {
+                display: flex;
+                justify-content: flex-end;
+                img {
+                    height: 100%;
+                }
             }
         }
     }
@@ -1539,26 +1546,6 @@ footer {
             }
         }
     }
-    .fires {
-        svg {
-            &:first-of-type {
-                width: 200px;
-                left: -70px;
-            }
-            &:nth-of-type(3) {
-                top: 18rem;
-                left: 20%;
-            }
-            &:nth-of-type(5) {
-                top: 14rem;
-                width: 150px;
-                right: 10px;
-            }
-            &:nth-of-type(even) {
-                display: none;
-            }
-        }
-    }
     .main {
         max-height: 100%;
         header {
@@ -1586,19 +1573,26 @@ footer {
                 height: 100%;
                 aspect-ratio: initial;
                 h2 {
-                    display: none;
+                    position: relative;
+                    top: initial;
+                    left: initial;
+                    transform: none;
                 }
                 .flex {
+                    flex: 1 0 auto;
                     flex-wrap: wrap;
-                    height: 25%;
                     width: 100%;
                     position: initial;
+                    height: initial;
                     padding: 0 1rem;
-                    &:last-of-type {
-                        height: 50%;
-                        article {
-                            height: 50%;
-                        }
+                    // &:last-of-type {
+                    //     height: 50%;
+                    //     article {
+                    //         height: 50%;
+                    //     }
+                    // }
+                    &:not(:first-of-type) {
+                        margin-top: 0;
                     }
                     article {
                         width: 50%;
@@ -1675,6 +1669,12 @@ footer {
         }
     }
     .sub {
+        &:before {
+            display: none;
+        }
+        .back {
+            top: 0;
+        }
         .wrapper {
             padding: 0 1.5rem;
             .logo {
@@ -1687,26 +1687,27 @@ footer {
                 font-size: .875rem;
             }
             .evenly {
-                padding-top: 6rem;
+                flex-direction: column;
+                padding-top: 2rem;
                 > div {
                     width: 100%;
-                    &:first-of-type {
-                        padding: 3rem 0 0 0;
-                    }
                 }
                 .menu-image {
-                    display: none;
-                    width: 25%;
-                    position: absolute;
-                    top: 1.5rem;
-                    right: 2rem;
+                    justify-content: center;
+                    width: 100%;
+                    img {
+                        height: 16rem;
+                    }
                 }
             }
         }
         .list {
-            padding: 0 2rem;
+            margin-left: -.5rem;
+            margin-right: -.5rem;
+            padding: 0;
             > div {
-                flex: 0 0 45%;
+                flex: 0 0 50%;
+                padding: 0 .5rem;
             }
         }
         &.event {
