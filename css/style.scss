@@ -6,6 +6,7 @@ $color-orange: #FF9500;
 $color-violet: #B471DC;
 $color-blue: #6E89D8;
 $color-event: #8F81E9;
+$color-invite: #736357;
 $inset-shaddow: inset 0 4px 4px rgba(0,0,0,.25);
 
 *,
@@ -743,9 +744,9 @@ footer {
         }
     }
     &.invite {
-        $color: $color-violet;
+        $color: $color-invite;
         border-color: $color;
-        background: linear-gradient(0deg, #F3E6F9 0%, #E3C3EF 100%);
+        background: linear-gradient(0deg, #fff 50%, transparentize($color, .7) 100%);
         overflow-y: auto;
         > .back {
             svg path {
@@ -765,6 +766,7 @@ footer {
                     font-size: 1.25rem;
                     line-height: 150%;
                     h4 {
+                        color: $color;
                         margin-bottom: 0;
                     }
                 }

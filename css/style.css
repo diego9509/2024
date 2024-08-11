@@ -728,12 +728,12 @@ footer .logos img {
   padding: 0.5rem 2.5rem;
 }
 .sub.invite {
-  border-color: #B471DC;
-  background: linear-gradient(0deg, #F3E6F9 0%, #E3C3EF 100%);
+  border-color: #736357;
+  background: linear-gradient(0deg, #fff 50%, rgba(115, 99, 87, 0.3) 100%);
   overflow-y: auto;
 }
 .sub.invite > .back svg path {
-  fill: #B471DC;
+  fill: #736357;
 }
 .sub.invite .wrapper {
   width: 1024px;
@@ -751,6 +751,7 @@ footer .logos img {
   line-height: 150%;
 }
 .sub.invite .wrapper .evenly + div h4 {
+  color: #736357;
   margin-bottom: 0;
 }
 .sub.invite .input-wrapper {
