@@ -31,6 +31,9 @@ button {
 .flex.between {
   justify-content: space-between;
 }
+.flex.around {
+  justify-content: space-around;
+}
 .flex.evenly {
   justify-content: space-evenly;
 }
@@ -775,12 +778,12 @@ footer .logos img {
   right: 1rem;
 }
 .sub.event {
-  border-color: #6E89D8;
-  background: linear-gradient(0deg, #F2F7FF 0%, #CDD8ED 100%);
+  border-color: #8F81E9;
+  background: linear-gradient(0deg, #fff 50%, rgba(143, 129, 233, 0.3) 100%);
   overflow-y: auto;
 }
 .sub.event > .back svg path {
-  fill: #6E89D8;
+  fill: #8F81E9;
 }
 .sub.event .wrapper {
   width: 1024px;
@@ -804,7 +807,7 @@ footer .logos img {
   margin-bottom: 0;
 }
 .sub.event .input-wrapper {
-  background: #6E89D8;
+  background: #8F81E9;
   text-align: center;
   padding: 1rem 1.25rem;
 }
@@ -846,6 +849,52 @@ footer .logos img {
   font-size: 1.125rem;
   padding: 0.5rem 2.5rem;
 }
+.sub.event .guide {
+  align-items: stretch;
+  gap: 3%;
+  margin: 2rem 0 2.5rem;
+}
+.sub.event .guide div {
+  flex: 0 0 25%;
+  position: relative;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+  background: #8F81E9;
+  border-radius: 9999px;
+  color: white;
+  height: 0;
+  padding-bottom: 25%;
+}
+.sub.event .guide div span {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.sub.event .guide div:after {
+  position: absolute;
+  top: 50%;
+  right: -22.5%;
+  transform: translateY(-50%);
+  content: "";
+  display: inline-block;
+  width: 11px;
+  height: 22px;
+  background-image: url("data:image/svg+xml,%3Csvg width='11' height='22' viewBox='0 0 11 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 11L3.59221e-07 9.67048e-07L-1.56408e-06 22L11 11Z' fill='%23999999'/%3E%3C/svg%3E%0A");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.sub.event .guide div:last-of-type:after {
+  display: none;
+}
+.sub.event p {
+  text-align: center;
+}
+.sub.event p + p {
+  margin-bottom: 4rem;
+}
 .sub.event .carousel {
   padding: 0;
 }
@@ -858,6 +907,17 @@ footer .logos img {
 }
 .sub.event .carousel .slick-next {
   right: 1rem;
+}
+.sub.event .flex.vertical.align-center {
+  flex: 0 1 25%;
+}
+.sub.event .flex.vertical.align-center img {
+  width: 100%;
+}
+.sub.event .flex.vertical.align-center span {
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin-top: 2rem;
 }
 .sub > .back {
   position: absolute;
@@ -1331,6 +1391,9 @@ footer .logos img {
   .sub .wrapper .evenly .menu-image img {
     width: 100%;
   }
+  .sub.event .guide div {
+    font-size: 1.25rem;
+  }
   .detail .back {
     z-index: 5;
   }
@@ -1619,6 +1682,9 @@ footer .logos img {
     flex-direction: column;
     gap: 2rem;
   }
+  .sub.event .guide div {
+    font-size: 1rem;
+  }
   .detail .wrapper {
     padding: 0;
     overflow-x: hidden;
@@ -1678,5 +1744,8 @@ footer .logos img {
   .sub .list .article {
     flex: 0 0 100%;
     padding: 2.5rem 25%;
+  }
+  .sub.event .guide div {
+    font-size: 0.875rem;
   }
 }/*# sourceMappingURL=style.css.map */
