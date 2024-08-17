@@ -19,6 +19,13 @@ button {
   cursor: pointer;
 }
 
+.align-center {
+  text-align: center;
+}
+.align-right {
+  text-align: right;
+}
+
 .flex {
   display: flex;
 }
@@ -806,6 +813,18 @@ footer .logos img {
 .sub.invite .carousel .slick-next {
   right: 1rem;
 }
+.sub.invite .align-right {
+  font-size: 1rem;
+  margin-bottom: 4rem;
+}
+.sub.invite .align-right strong {
+  display: block;
+}
+.sub.invite h4 {
+  color: #736357;
+  font-size: 1.25rem;
+  margin: 0.5rem 0;
+}
 .sub.event {
   border-color: #8F81E9;
   background: linear-gradient(0deg, #fff 50%, rgba(143, 129, 233, 0.3) 100%);
@@ -1200,9 +1219,10 @@ footer .logos img {
 }
 .detail .evenly {
   height: 100%;
+  gap: 2rem;
 }
 .detail .evenly > div:not(.info) {
-  flex: 0 0 40%;
+  flex: 0 1 40%;
 }
 .detail .evenly > div {
   height: 100%;
@@ -1210,6 +1230,17 @@ footer .logos img {
 .detail .evenly .info {
   flex-grow: 1;
   padding-right: 5rem;
+}
+.detail .evenly .image-area {
+  display: flex;
+  justify-content: center;
+}
+.detail .evenly .image-area svg {
+  height: 100%;
+}
+.detail .evenly .image-area svg rect {
+  background-position: center;
+  background-size: contain;
 }
 .detail .evenly .image-wrapper {
   position: relative;
@@ -1761,6 +1792,25 @@ footer .logos img {
   .detail .wrapper .evenly .image-wrapper .light {
     top: 0;
     width: 75%;
+  }
+  .detail .wrapper .evenly .image-area svg {
+    width: 60%;
+    height: initial;
+    overflow: visible;
+  }
+  .detail .wrapper .evenly .image-area.horizontal svg {
+    width: 75%;
+  }
+  .detail .wrapper .evenly .video {
+    width: 100%;
+    margin: 0;
+  }
+  .detail .wrapper .evenly .video .video-container {
+    width: 100%;
+    padding-top: 177.77%;
+  }
+  .detail .wrapper .evenly .video .video-container:after {
+    display: none;
   }
   .detail .wrapper .evenly .info {
     padding: 2.5rem 2rem;

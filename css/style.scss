@@ -33,6 +33,15 @@ button {
     cursor: pointer;
 }
 
+.align {
+    &-center {
+        text-align: center;
+    }
+    &-right {
+        text-align: right;
+    }
+}
+
 .flex {
     display: flex;
     &.center {
@@ -833,6 +842,18 @@ footer {
                 right: 1rem;
             }
         }
+        .align-right {
+            font-size: 1rem;
+            margin-bottom: 4rem;
+            strong {
+                display: block;
+            }
+        }
+        h4 {
+            color: $color;
+            font-size: 1.25rem;
+            margin: .5rem 0;
+        }
     }
     &.event {
         $color: $color-event;
@@ -1268,8 +1289,9 @@ footer {
     }
     .evenly {
         height: 100%;
+        gap: 2rem;
         > div:not(.info) {
-            flex: 0 0 40%;
+            flex: 0 1 40%;
         }
         > div {
             height: 100%;
@@ -1277,6 +1299,17 @@ footer {
         .info {
             flex-grow: 1;
             padding-right: 5rem;
+        }
+        .image-area {
+            display: flex;
+            justify-content: center;
+            svg {
+                height: 100%;
+                rect {
+                    background-position: center;
+                    background-size: contain;
+                }
+            } 
         }
         .image-wrapper {
             position: relative;
@@ -1924,6 +1957,29 @@ footer {
                     .light {
                         top: 0;
                         width: 75%;
+                    }
+                }
+                .image-area {
+                    svg {
+                        width: 60%;
+                        height: initial;
+                        overflow: visible;
+                    }
+                    &.horizontal {
+                        svg {
+                            width: 75%;
+                        }
+                    }
+                }
+                .video {
+                    width: 100%;
+                    margin: 0;
+                    .video-container {
+                        width: 100%;
+                        padding-top: 177.77%;
+                        &:after {
+                            display: none;
+                        }
                     }
                 }
                 .info {
