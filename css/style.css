@@ -1300,6 +1300,12 @@ footer .logos img {
 .detail .info .flex strong {
   font-size: 1.75rem;
 }
+.detail .info > div:first-of-type {
+  flex: 1 0 auto;
+}
+.detail .info .video {
+  flex-basis: 35rem;
+}
 .detail .label {
   color: white;
   font-size: 1.5rem;

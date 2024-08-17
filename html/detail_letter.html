@@ -7,14 +7,12 @@
     <script type="text/javascript" src="../js/slick/slick.min.js"></script>
     <link rel="stylesheet" href="../js/slick/slick.css" />
     <link rel="stylesheet" href="../js/slick/slick-theme.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
     <link rel="stylesheet" href="../css/style.css" />
     <title>Document</title>
 </head>
 <body>
     <div class="detail letter">
-        <a class="back" href="" alt="뒤로 가기">
+        <a class="back" href="" alt="뒤로 가기" onclick="alert('click')">
             <svg width="74" height="74" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M2.90764 39.2064L34.2422 70.5409V70.5223C35.4524 71.7325 37.4259 71.7325 38.6361 70.5223L40.833 68.3253C42.0432 67.1152 42.0432 65.1416 40.833 63.9314L18.5752 41.6736H68.8908C70.608 41.6736 72.0001 40.2816 72.0001 38.5644V35.4551C72.0001 33.7379 70.608 32.3459 68.8908 32.3459H18.556L40.833 10.0688C42.0432 8.85863 42.0432 6.88509 40.833 5.67491L38.6361 3.47795C37.4259 2.26777 35.4524 2.26777 34.2422 3.47795L2.90764 34.8125C1.69745 36.0227 1.69745 37.9962 2.90764 39.2064Z" fill="#F06673"/>
             </svg>                
@@ -24,32 +22,65 @@
             <section>
                 <div class="wrapper">
                     <article class="flex evenly align-start">
-                        <div>
-                            <div class="image-wrapper">
-                                <a href="#ex1" rel="modal:open" onclick="focusControl(0)">
-                                    <img src="../images/img_sample_01.png" />
-                                </a>
-                            </div>
-                            <div class="image-wrapper-bottom"></div>
-                        </div>
+                        <div class="image-area">
+                            <svg width="559" height="1080" viewBox="0 0 559 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M271.37 181.97H287.32C290.82 181.97 293.69 184.94 293.69 188.56V1167.23C293.69 1170.86 290.82 1173.82 287.32 1173.82H271.37C267.86 1173.82 265 1170.85 265 1167.23V188.56C265 184.93 267.87 181.97 271.37 181.97Z" fill="#A05E17"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M270.39 182.05C267.35 182.54 265 185.28 265 188.56V1167.23C265 1170.51 267.35 1173.25 270.39 1173.74V182.05Z" fill="#D5A158"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M288.4 1173.73C291.4 1173.2 293.7 1170.48 293.7 1167.23V188.56C293.7 185.31 291.4 182.6 288.4 182.06V1173.72V1173.73Z" fill="#8D4D13"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M43.84 949.08V969.05C43.84 973.44 45.25 977.03 46.97 977.03H511.63C513.35 977.03 514.76 973.44 514.76 969.05V949.08C514.76 944.69 513.35 941.1 511.63 941.1H46.97C45.25 941.1 43.84 944.69 43.84 949.08Z" fill="#C87822"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M43.88 947.84C44.12 944.03 45.42 941.1 46.97 941.1H511.63C513.19 941.1 514.49 944.04 514.72 947.84H43.88Z" fill="#E4B067"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M514.72 970.4C514.47 974.15 513.18 977.03 511.63 977.03H46.97C45.43 977.03 44.14 974.15 43.89 970.4H514.72Z" fill="#8D4D13"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M269.65 -48H288.96C293.21 -48 296.68 -44.95 296.68 -41.22V941C296.68 941 291.975 941 288.96 941C281.419 941 269.65 941 269.65 941H261.93V-41.22C261.93 -44.95 265.4 -48 269.65 -48Z" fill="#C87822"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M130.02 77.13H149.33C153.58 77.13 156.69 80.72 156.26 85.11L38.58 1270.02C38.14 1274.41 34.31 1278 30.07 1278H10.76C6.51997 1278 3.39997 1274.41 3.83997 1270.02L121.51 85.11C121.95 80.72 125.77 77.13 130.02 77.13Z" fill="#C87822"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M428.59 77.13H409.28C405.03 77.13 401.92 80.72 402.35 85.11L520.03 1270.02C520.46 1274.41 524.29 1278 528.54 1278H547.85C552.1 1278 555.21 1274.41 554.78 1270.02L437.1 85.11C436.66 80.72 432.83 77.13 428.59 77.13Z" fill="#C87822"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M268.45 -47.9199C264.77 -47.4099 261.93 -44.5899 261.93 -41.2199V941H268.45V-47.9199Z" fill="#E4B067"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M128.81 77.22C125.07 77.82 121.9 81.14 121.51 85.11L3.83001 1270.02C3.44001 1273.99 5.94001 1277.31 9.57001 1277.91L128.81 77.22Z" fill="#E4B067"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M527.22 1277.89C523.53 1277.24 520.42 1273.95 520.03 1270.02L402.36 85.11C401.97 81.18 404.42 77.8901 407.99 77.2401L527.23 1277.88L527.22 1277.89Z" fill="#E4B067"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M290.27 941H296.68V-41.2202C296.68 -44.5602 293.9 -47.3602 290.27 -47.9102V941Z" fill="#8D4D13"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M31.39 1277.89C35.08 1277.24 38.19 1273.95 38.58 1270.02L156.25 85.1098C156.64 81.1798 154.18 77.8898 150.62 77.2398L31.39 1277.89Z" fill="#8D4D13"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M429.79 77.2198C433.53 77.8198 436.7 81.1398 437.1 85.1098L554.78 1270.02C555.17 1273.99 552.66 1277.31 549.04 1277.91L429.79 77.2198Z" fill="#8D4D13"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.51 831.3V851.27C0.51 855.66 2.18 859.25 4.22 859.25H554.4C556.44 859.25 558.11 855.66 558.11 851.27V831.3C558.11 826.91 556.44 823.32 554.4 823.32H4.21C2.17 823.32 0.5 826.91 0.5 831.3H0.51Z" fill="#C87822"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.549988 830.06C0.829988 826.25 2.36999 823.32 4.20999 823.32H554.39C556.23 823.32 557.77 826.26 558.05 830.06H0.549988Z" fill="#E4B067"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.51 846.81V855.7C0.51 857.65 2.18 859.25 4.22 859.25H554.4C556.44 859.25 558.11 857.65 558.11 855.7V846.81C558.11 844.86 556.44 843.26 554.4 843.26H4.21C2.17 843.26 0.5 844.86 0.5 846.81H0.51Z" fill="#B2691B"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.549988 846.26C0.829988 844.57 2.36999 843.26 4.20999 843.26H554.39C556.23 843.26 557.77 844.57 558.05 846.26H0.549988Z" fill="#E4B067"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M558.05 856.3C557.75 857.97 556.22 859.25 554.4 859.25H4.21C2.38 859.25 0.859998 857.97 0.559998 856.3H558.04H558.05Z" fill="#8D4D13"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M254.58 109.7H304.03C306.46 109.7 308.46 107.83 308.46 105.53V37.7801C308.46 35.4901 306.47 33.6201 304.03 33.6201H254.58C252.15 33.6201 250.15 35.4901 250.15 37.7801V105.53C250.15 107.82 252.14 109.7 254.58 109.7Z" fill="#D3822D"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M254.58 109.7H254.7V33.6201H254.58C252.14 33.6201 250.16 35.6801 250.16 38.1901V105.12C250.16 107.64 252.15 109.69 254.58 109.69V109.7Z" fill="#E4B067"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M304.03 109.7H303.91V33.6201H304.03C306.47 33.6201 308.45 35.6801 308.45 38.1901V105.12C308.45 107.64 306.46 109.69 304.03 109.69V109.7Z" fill="#B26520"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M279.3 80.0803C283.79 80.0803 287.43 76.3102 287.43 71.6702C287.43 67.0303 283.79 63.2603 279.3 63.2603C274.81 63.2603 271.17 67.0303 271.17 71.6702C271.17 76.3102 274.81 80.0803 279.3 80.0803Z" fill="#8D4D13"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M217.04 102.92V114.18C217.04 116.66 217.41 118.68 217.87 118.68H340.74C341.2 118.68 341.57 116.65 341.57 114.18V102.92C341.57 100.44 341.2 98.4199 340.74 98.4199H217.87C217.42 98.4199 217.04 100.45 217.04 102.92Z" fill="#B2691B"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M217.05 102.22C217.11 100.07 217.45 98.4199 217.86 98.4199H340.73C341.14 98.4199 341.49 100.08 341.55 102.22H217.04H217.05Z" fill="#E4B067"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M341.56 114.94C341.49 117.06 341.15 118.68 340.74 118.68H217.87C217.46 118.68 217.12 117.06 217.06 114.94H341.57H341.56Z" fill="#8D4D13"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M51.87 962.96C53.78 962.96 55.32 961.22 55.32 959.06C55.32 956.9 53.78 955.17 51.87 955.17C49.96 955.17 48.43 956.91 48.43 959.06C48.43 961.21 49.97 962.96 51.87 962.96Z" fill="#B2B2B2"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M51.8 959.1C52.66 958.27 52.96 957.06 52.47 956.41C51.98 955.76 50.88 955.91 50.02 956.74C49.16 957.57 48.86 958.78 49.35 959.43C49.85 960.08 50.94 959.93 51.8 959.1Z" fill="#E6E6E6"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M506.57 962.96C508.47 962.96 510.02 961.22 510.02 959.06C510.02 956.9 508.48 955.17 506.57 955.17C504.66 955.17 503.12 956.91 503.12 959.06C503.12 961.21 504.66 962.96 506.57 962.96Z" fill="#B2B2B2"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M506.51 959.1C507.37 958.27 507.67 957.06 507.18 956.41C506.69 955.76 505.59 955.91 504.73 956.74C503.87 957.57 503.57 958.78 504.06 959.43C504.55 960.08 505.65 959.93 506.51 959.1Z" fill="#E6E6E6"/>
+                                <image x="16" y="118" href="../images/img_sample_01.png" width="524" />
+                            </svg>
+                                
+                            <!-- <div class="image-wrapper">
+                                <img src="../images/img_sample_01.png" />
+                            </div> -->
+                        </div> 
                         <div class="info">
-                            <img class="logo" src="../images/logo_black.svg" alt="제 12회 전국성인문해교육 시화전 온라인 전시" />
-                            <div class="flex align-center">
-                                <label class="label">작품명</label>
-                                <h3>살구꽃이 피었습니다.</h3>
-                            </div>
-                            <div class="flex align-center">
-                                <label class="label">작가</label>
-                                <div>
-                                    <strong>김윤자</strong>
-                                    <span>살구평생학교</span>
+                            <div>
+                                <img class="logo" src="../images/logo_black.svg" alt="제 12회 전국성인문해교육 시화전 온라인 전시" />
+                                <div class="flex align-center">
+                                    <label class="label">작품명</label>
+                                    <h3>살구꽃이 피었습니다.</h3>
+                                </div>
+                                <div class="flex align-center">
+                                    <label class="label">작가</label>
+                                    <div>
+                                        <strong>김윤자</strong>
+                                        <span>살구평생학교</span>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="flex align-start">
-                                <label class="label">작품설명</label>
-                                <p>
-                                    글을 모르던 지난 세월 큰 동서의 시집살이로 고생하다가, 살구평생학교에서 글을 배운 후 찾은 자신감을 꽃이 피는 것에 비유하여 표현한 작품이다.
-                                </p>
+                            <div class="video">
+                                <div class="video-container">
+                                    <iframe src="https://www.youtube.com/embed/zKW6FOZCcaw?si=EoyjQ6L7Fe57QQ-e" allowfullscreen></iframe>
+                                </div>
                             </div>
                         </div>
                     </article>
@@ -59,30 +90,64 @@
             <section>
                 <div class="wrapper">
                     <article class="flex evenly align-start">
-                        <div>
-                            <div class="image-wrapper">
-                                <a href="#ex1" rel="modal:open"><img src="../images/img_sample_02.png" /></a>
-                            </div>
-                            <div class="image-wrapper-bottom"></div>
+                        <div class="image-area horizontal">
+                            <svg width="749" height="1080" viewBox="0 0 749 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M366.47 181.97H382.42C385.92 181.97 388.79 184.94 388.79 188.56V1167.23C388.79 1170.86 385.92 1173.82 382.42 1173.82H366.47C362.96 1173.82 360.1 1170.85 360.1 1167.23V188.56C360.1 184.93 362.97 181.97 366.47 181.97Z" fill="#A05E17"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M365.49 182.05C362.45 182.54 360.1 185.28 360.1 188.56V1167.23C360.1 1170.51 362.45 1173.25 365.49 1173.74V182.05Z" fill="#D5A158"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M383.5 1173.73C386.5 1173.2 388.8 1170.48 388.8 1167.23V188.56C388.8 185.31 386.5 182.6 383.5 182.06V1173.72V1173.73Z" fill="#8D4D13"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M364.79 -48H384.1C388.35 -48 391.82 -44.95 391.82 -41.22V965.75C391.82 969.48 388.35 972.53 384.1 972.53H364.79C360.54 972.53 357.07 969.48 357.07 965.75V-41.22C357.07 -44.95 360.54 -48 364.79 -48Z" fill="#C87822"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M225.16 77.13H244.47C248.72 77.13 251.83 80.72 251.4 85.11L133.72 1270.02C133.28 1274.41 129.45 1278 125.21 1278H105.9C101.65 1278 98.54 1274.41 98.97 1270.02L216.65 85.11C217.09 80.72 220.92 77.13 225.16 77.13Z" fill="#C87822"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M523.73 77.13H504.42C500.18 77.13 497.06 80.72 497.49 85.11L615.17 1270.02C615.6 1274.41 619.43 1278 623.68 1278H642.99C647.24 1278 650.35 1274.41 649.92 1270.02L532.24 85.11C531.8 80.72 527.97 77.13 523.73 77.13Z" fill="#C87822"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M363.6 -47.9199C359.92 -47.4099 357.08 -44.5899 357.08 -41.2199V965.75C357.08 969.12 359.92 971.94 363.6 972.45V-47.9199Z" fill="#E4B067"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M223.96 77.22C220.22 77.82 217.05 81.14 216.66 85.11L98.98 1270.02C98.59 1273.99 101.1 1277.31 104.72 1277.91L223.96 77.22Z" fill="#E4B067"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M622.37 1277.89C618.68 1277.24 615.57 1273.95 615.18 1270.02L497.5 85.11C497.11 81.18 499.57 77.8901 503.13 77.2401L622.37 1277.88V1277.89Z" fill="#E4B067"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M385.41 972.44C389.04 971.89 391.82 969.1 391.82 965.76V-41.2202C391.82 -44.5602 389.04 -47.3602 385.41 -47.9102V972.44Z" fill="#8D4D13"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M126.53 1277.89C130.22 1277.24 133.33 1273.95 133.72 1270.02L251.4 85.1098C251.79 81.1798 249.33 77.8898 245.77 77.2398L126.53 1277.88V1277.89Z" fill="#8D4D13"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M524.94 77.2198C528.68 77.8198 531.85 81.1398 532.24 85.1098L649.92 1270.02C650.31 1273.99 647.8 1277.31 644.18 1277.91L524.94 77.2198Z" fill="#8D4D13"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M138.99 949.08V969.05C138.99 973.44 140.4 977.03 142.12 977.03H606.78C608.5 977.03 609.91 973.44 609.91 969.05V949.08C609.91 944.69 608.5 941.1 606.78 941.1H142.11C140.39 941.1 138.98 944.69 138.98 949.08H138.99Z" fill="#C87822"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M139.02 947.84C139.26 944.03 140.56 941.1 142.11 941.1H606.77C608.33 941.1 609.63 944.04 609.86 947.84H139.02Z" fill="#E4B067"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M609.86 970.4C609.61 974.15 608.32 977.03 606.78 977.03H142.11C140.57 977.03 139.28 974.15 139.03 970.4H609.86Z" fill="#8D4D13"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M95.65 709.95V718.84C95.65 720.79 97.32 722.39 99.35 722.39H649.53C651.57 722.39 653.24 720.79 653.24 718.84V709.95C653.24 708 651.57 706.4 649.53 706.4H99.36C97.32 706.4 95.66 708 95.66 709.95H95.65Z" fill="#B2691B"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M95.7 709.4C95.98 707.71 97.52 706.4 99.36 706.4H649.54C651.38 706.4 652.92 707.71 653.2 709.4H95.7Z" fill="#E4B067"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M653.19 719.44C652.89 721.11 651.36 722.39 649.54 722.39H99.36C97.54 722.39 96.01 721.11 95.71 719.44H653.19Z" fill="#8D4D13"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M349.72 154.89H399.17C401.6 154.89 403.59 153.02 403.59 150.72V82.9701C403.59 80.6801 401.6 78.8101 399.17 78.8101H349.72C347.29 78.8101 345.3 80.6801 345.3 82.9701V150.72C345.3 153.01 347.29 154.89 349.72 154.89Z" fill="#D3822D"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M349.72 154.89H349.84V78.8101H349.72C347.29 78.8101 345.3 80.8701 345.3 83.3801V150.31C345.3 152.82 347.29 154.88 349.72 154.88V154.89Z" fill="#E4B067"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M399.17 154.89H399.05V78.8101H399.17C401.61 78.8101 403.59 80.8701 403.59 83.3801V150.31C403.59 152.82 401.6 154.88 399.17 154.88V154.89Z" fill="#B26520"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M374.45 125.26C378.94 125.26 382.58 121.49 382.58 116.85C382.58 112.21 378.94 108.44 374.45 108.44C369.96 108.44 366.32 112.21 366.32 116.85C366.32 121.49 369.96 125.26 374.45 125.26Z" fill="#8D4D13"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M312.18 148.1V159.36C312.18 161.84 312.55 163.86 313.01 163.86H435.88C436.34 163.86 436.71 161.83 436.71 159.36V148.1C436.71 145.62 436.34 143.6 435.88 143.6H313.01C312.55 143.6 312.18 145.63 312.18 148.1Z" fill="#B2691B"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M312.19 147.4C312.25 145.25 312.6 143.6 313.01 143.6H435.88C436.29 143.6 436.64 145.26 436.7 147.4H312.19Z" fill="#E4B067"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M436.7 160.13C436.63 162.25 436.29 163.87 435.88 163.87H313.01C312.6 163.87 312.26 162.25 312.19 160.13H436.7Z" fill="#8D4D13"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M147.01 962.96C148.91 962.96 150.46 961.22 150.46 959.06C150.46 956.9 148.92 955.17 147.01 955.17C145.1 955.17 143.56 956.91 143.56 959.06C143.56 961.21 145.11 962.96 147.01 962.96Z" fill="#B2B2B2"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M146.95 959.1C147.81 958.27 148.11 957.06 147.62 956.41C147.13 955.76 146.03 955.91 145.17 956.74C144.31 957.57 144.01 958.78 144.5 959.43C144.99 960.08 146.09 959.93 146.95 959.1Z" fill="#CBCBCB"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M601.71 962.96C603.61 962.96 605.16 961.22 605.16 959.06C605.16 956.9 603.62 955.17 601.71 955.17C599.8 955.17 598.26 956.91 598.26 959.06C598.26 961.21 599.8 962.96 601.71 962.96Z" fill="#B2B2B2"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M601.65 959.1C602.51 958.27 602.81 957.06 602.32 956.41C601.83 955.76 600.73 955.91 599.86 956.74C599 957.57 598.7 958.78 599.19 959.43C599.68 960.08 600.78 959.93 601.64 959.1H601.65Z" fill="#CBCBCB"/>
+                                <!-- <path d="M0.5 164.37H748.39V705.91H0.5V164.37Z" fill="white" /> -->
+                                <image x="0" y="164" href="../images/img_sample_03.png" width="768" />
+                            </svg>
+                                
+                            <!-- <div class="image-wrapper horizontal">
+                                <img src="../images/img_sample_03.png" />
+                            </div> -->
                         </div>
                         <div class="info">
-                            <img class="logo" src="../images/logo_black.svg" alt="제 12회 전국성인문해교육 시화전 온라인 전시" />
-                            <div class="flex align-center">
-                                <label class="label">작품명</label>
-                                <h3>살구꽃이 피었습니다.</h3>
-                            </div>
-                            <div class="flex align-center">
-                                <label class="label">작가</label>
-                                <div>
-                                    <strong>김윤자</strong>
-                                    <span>살구평생학교</span>
+                            <div>
+                                <img class="logo" src="../images/logo_black.svg" alt="제 12회 전국성인문해교육 시화전 온라인 전시" />
+                                <div class="flex align-center">
+                                    <label class="label">작품명</label>
+                                    <h3>살구꽃이 피었습니다.</h3>
+                                </div>
+                                <div class="flex align-center">
+                                    <label class="label">작가</label>
+                                    <div>
+                                        <strong>김윤자</strong>
+                                        <span>살구평생학교</span>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="flex align-start">
-                                <label class="label">작품설명</label>
-                                <p>
-                                    글을 모르던 지난 세월 큰 동서의 시집살이로 고생하다가, 살구평생학교에서 글을 배운 후 찾은 자신감을 꽃이 피는 것에 비유하여 표현한 작품이다.
-                                </p>
+                            <div class="video">
+                                <div class="video-container">
+                                    <iframe src="https://www.youtube.com/embed/suK7uWhDW5s?si=_REIaPWXZ-NRrPBX" allowfullscreen></iframe>
+                                </div>
                             </div>
                         </div>
                     </article>
@@ -90,33 +155,15 @@
             </section>
         </div>
 
-        <div id="ex1" class="modal">
-            <img src="../images/img_sample_01.png" />
-        </div>
     </div>
 </body>
 <script>
 $(document).ready(function(){
-    $('.carousel').slick({
-        dots: false,
-        slidesToShow: 1,
-        infinite: true,
-    });
-
-    var target = $('.slick-current');
-
-    function focusControl(val) {
-        $('.back').attr('tabindex', val)
-        target.find('button').attr('tabindex', val)
-        target.find('a').attr('tabindex', val)
-    }
-
-    $('#ex1').on($.modal.OPEN, function(event, modal) {
-        focusControl(-1);
-    });
-    $('#ex1').on($.modal.CLOSE, function(event, modal) {
-        focusControl(0);
-    });
+  $('.carousel').slick({
+    dots: false,
+    slidesToShow: 1,
+    infinite: true,
+  });
 });
 </script>
 </html>

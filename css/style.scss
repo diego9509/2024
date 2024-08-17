@@ -1366,6 +1366,14 @@ footer {
                 font-size: 1.75rem;
             }
         }
+        > div {
+            &:first-of-type {
+                flex: 1 0 auto;
+            }
+        }
+        .video {
+            flex-basis: 35rem;
+        }
     }
     .label {
         color: white;
