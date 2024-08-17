@@ -918,9 +918,6 @@ footer .logos img {
 .sub.event .guide div:last-of-type:after {
   display: none;
 }
-.sub.event p {
-  text-align: center;
-}
 .sub.event p + p {
   margin-bottom: 4rem;
 }
