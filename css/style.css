@@ -62,8 +62,37 @@ button {
   height: 100%;
 }
 .intro > .flex {
-  width: 1440px;
+  height: 100%;
   gap: 4rem;
+  padding: 4rem 10%;
+  margin: 0 auto;
+}
+.intro > .flex .col {
+  flex: 0 1 50%;
+}
+.intro > .flex .col:first-child {
+  position: relative;
+  background: url("../images/intro.png") no-repeat center/contain;
+}
+.intro > .flex .col:first-child .flex {
+  width: 75%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  gap: 2rem;
+}
+.intro > .flex .col:first-child .flex img {
+  width: 100%;
+}
+.intro > .flex .col:first-child button {
+  width: 11.25rem;
+  border-radius: 9999px;
+  border: none;
+  background: #A01857;
+  color: white;
+  font-size: 1.5rem;
+  padding: 1rem 3rem;
   margin: 0 auto;
 }
 .intro h1 {
@@ -109,8 +138,10 @@ button {
   flex: 1 0 50%;
 }
 .intro .col small {
-  display: block;
-  text-align: center;
+  position: absolute;
+  left: 50%;
+  bottom: -1.5rem;
+  transform: translateX(-50%);
   font-size: 0.875rem;
   color: #666;
 }
@@ -131,28 +162,6 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-.intro .col a {
-  display: inline-block;
-  height: 100%;
-  position: relative;
-}
-.intro .col a .flex {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  gap: 2rem;
-}
-.intro .col a button {
-  width: 11.25rem;
-  border-radius: 9999px;
-  border: none;
-  background: #A01857;
-  color: white;
-  font-size: 1.5rem;
-  padding: 1rem 3rem;
-  margin: 0 auto;
 }
 
 header {
@@ -1351,6 +1360,11 @@ footer .logos img {
   }
 }
 @media (max-width: 1440px) {
+  .intro > .flex {
+    gap: 2rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
   .main section .wrapper {
     width: 100%;
   }
@@ -1401,6 +1415,10 @@ footer .logos img {
   }
 }
 @media (max-width: 1280px) {
+  .intro > .flex {
+    gap: 2rem;
+    padding: 2rem;
+  }
   .sub .list > div {
     flex: 0 0 20%;
   }
@@ -1425,6 +1443,20 @@ footer .logos img {
   }
 }
 @media (max-width: 1080px) {
+  .intro > .flex {
+    gap: 2rem;
+    padding: 2rem;
+  }
+  .intro ul li {
+    font-size: 0.875rem;
+  }
+  .intro .col div .flex div .flex {
+    gap: 0;
+  }
+  .intro .col div .flex img {
+    transform: scale(0.75);
+    transform-origin: left center;
+  }
   .sub.invite .wrapper,
   .sub.event .wrapper {
     width: 100%;
@@ -1512,6 +1544,32 @@ footer .logos img {
   }
 }
 @media (max-width: 768px) {
+  .intro {
+    overflow-y: auto;
+  }
+  .intro > .flex {
+    flex-direction: column;
+    gap: 3rem;
+    padding: 1rem;
+  }
+  .intro > .flex .col {
+    flex: 1 0 auto;
+  }
+  .intro > .flex .col:first-of-type {
+    padding-bottom: 100%;
+  }
+  .intro > .flex .col:first-of-type small {
+    width: 100%;
+    text-align: center;
+  }
+  .intro > .flex .col:first-of-type button {
+    width: auto;
+    font-size: 1.25rem;
+    padding: 0.875rem 2rem;
+  }
+  .intro > .flex .col:last-of-type {
+    gap: 2rem;
+  }
   .button-event {
     width: 4rem;
     height: 4rem;
@@ -1760,6 +1818,12 @@ footer .logos img {
   }
   .sub.visitor .evenly > div:last-of-type {
     padding: 0;
+  }
+  .sub.visitor .list .article {
+    padding: 1.5rem 0;
+  }
+  .sub.visitor .list .article .articel-wrapper {
+    padding: 2.5rem 6rem;
   }
   .sub.event .wrapper .evenly > div:first-of-type {
     padding: 0;
