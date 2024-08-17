@@ -33,7 +33,7 @@ button {
     cursor: pointer;
 }
 
-.align {
+.text {
     &-center {
         text-align: center;
     }
@@ -305,18 +305,18 @@ footer {
 }
 
 .pop-event {
+    $color: #8F81E9;
     position: fixed;
     bottom: 0;
     right: 0;
     background: white;
-    border-top: .875rem solid $color-blue;
-    box-shadow: $inset-shaddow;
+    border-top: .875rem solid $color;
     z-index: 7;
     padding: 1.75rem 2rem;
-    transform: translateY(100%);
+    transform: translateX(100%);
     transition: .75s cubic-bezier(0.075, 0.82, 0.165, 1);
     &.is-shown {
-        transform: translateY(0);
+        transform: translateX(0);
     }
     button {
         cursor: pointer;
@@ -325,9 +325,9 @@ footer {
         margin-bottom: 1rem;
         h4 {
             font-size: 1.5rem;
-            color: $color-blue;
-            padding: .5rem 0 .5rem 5rem;
-            background: url("data:image/svg+xml,%3Csvg width='69' height='33' viewBox='0 0 69 33' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_195_23361)'%3E%3Cpath d='M27.89 1.15039H4.97002C2.8603 1.15039 1.15002 2.86066 1.15002 4.97039V27.8904C1.15002 30.0001 2.8603 31.7104 4.97002 31.7104H27.89C29.9998 31.7104 31.71 30.0001 31.71 27.8904V4.97039C31.71 2.86066 29.9998 1.15039 27.89 1.15039Z' stroke='%234068B4' stroke-width='2.29' stroke-miterlimit='10'/%3E%3Cpath d='M63.36 1.15039H40.44C38.3303 1.15039 36.62 2.86066 36.62 4.97039V27.8904C36.62 30.0001 38.3303 31.7104 40.44 31.7104H63.36C65.4697 31.7104 67.18 30.0001 67.18 27.8904V4.97039C67.18 2.86066 65.4697 1.15039 63.36 1.15039Z' stroke='%234068B4' stroke-width='2.29' stroke-miterlimit='10'/%3E%3Cpath d='M23.96 10.8597V20.7397C23.96 21.4797 23.34 21.8197 22.73 21.8197C22.12 21.8197 21.47 21.4897 21.47 20.7397V11.6997C21.47 11.3097 21.35 11.1597 20.95 11.1597H10.02C9.40001 11.1597 9.13 10.6697 9.13 10.0597C9.13 9.44969 9.40001 8.92969 10.02 8.92969H22.07C23.5 8.92969 23.97 9.38969 23.97 10.8497L23.96 10.8597Z' fill='%234068B4'/%3E%3Cpath d='M48.13 9.67961V18.6896C48.13 19.0996 48.28 19.2296 48.65 19.2296H59.42C60.01 19.2296 60.28 19.7396 60.28 20.3296C60.28 20.9196 60.01 21.4296 59.42 21.4296H47.52C46.09 21.4296 45.62 20.9696 45.62 19.5096V9.67961C45.62 8.93961 46.24 8.59961 46.88 8.59961C47.52 8.59961 48.14 8.92961 48.14 9.67961H48.13Z' fill='%234068B4'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_195_23361'%3E%3Crect width='68.32' height='32.85' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A") no-repeat left center;
+            color: $color;
+            padding: .5rem 0 .5rem 3rem;
+            background: url("data:image/svg+xml,%3Csvg width='37' height='31' viewBox='0 0 37 31' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M27.9008 0.604272C27.0819 1.42377 27.0819 2.78959 27.9008 3.61736C31.0441 6.76288 32.8226 11.0093 32.8226 15.529C32.8226 20.0486 31.0441 24.1543 27.9008 27.3661C27.0819 28.1856 27.0819 29.5597 27.9008 30.3792C28.3061 30.7931 28.7942 30.9917 29.3401 30.9917C29.8861 30.9917 30.432 30.7848 30.8456 30.3792C34.7416 26.4804 36.9998 21.1413 36.9998 15.529C36.9998 9.91669 34.8161 4.64379 30.8456 0.61255C30.432 0.198665 29.9522 0 29.4063 0H29.3401C28.7942 0 28.3144 0.206943 27.9008 0.61255V0.604272Z' fill='%238F81E9'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M21.8126 3.21188C21.2005 3.89893 21.2005 5.05781 21.8126 5.74486C24.5506 8.41028 26.0561 12.0442 26.0561 15.8768C26.0561 19.7093 24.5506 23.2688 21.8126 26.0087C21.2005 26.6212 21.2005 27.7884 21.8126 28.5417C22.2262 28.881 22.6398 29.0218 23.1113 29.0218C23.5828 29.0218 24.0046 28.8893 24.3438 28.5417C27.7683 25.1892 29.613 20.6696 29.613 15.885C29.613 11.1005 27.7683 6.64713 24.3438 3.22016C24.0046 2.88077 23.5911 2.67383 23.1113 2.67383C22.6398 2.67383 22.2179 2.88077 21.8126 3.22016V3.21188Z' fill='%238F81E9'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M19.8274 7.1767C19.1408 6.56415 17.9827 6.56415 17.2962 7.1767C16.6096 7.92997 16.6096 9.08885 17.2962 9.7759C20.6545 13.1284 20.6545 18.5337 17.2962 21.8862C16.6096 22.5732 16.6096 23.7321 17.2962 24.4192C17.7098 24.7585 18.1234 24.8993 18.5949 24.8993C19.0084 24.8993 19.4882 24.7668 19.8274 24.4192C24.6168 19.6926 24.6168 11.9612 19.8274 7.1767Z' fill='%238F81E9'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M5.94746 8.89014H1.57165C0.686564 8.89014 0 9.64341 0 10.4629V21.2074C0 22.0269 0.686564 22.7801 1.57165 22.7801H5.94746V8.89014Z' fill='%238F81E9'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M12.3085 4.71019L7.38672 8.41032V23.2605L12.3085 26.9607C13.3342 27.7139 14.7652 27.0269 14.7652 25.7273V5.94357C14.7652 4.64397 13.3342 3.95692 12.3085 4.71019Z' fill='%238F81E9'/%3E%3C/svg%3E%0A") no-repeat center left;
             margin: 0;
             margin-right: 4rem;
         }
@@ -347,41 +347,17 @@ footer {
             font-size: .75rem;
         }
     }
+    > strong {
+        color: $color;
+        display: block;
+        font-size: 5rem;
+        text-align: center;
+    }
     hr {
         border: none;
         height: 1px;
         background: #bfbfbf;
         margin: 2rem 0 1.5rem;
-    }
-    .row {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: .5rem;
-        > div {
-            position: relative;
-            width: 3.125rem;
-            height: 3.125rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: #f5f5f5;
-            color: transparent;
-            font-size: 2.5rem;
-            font-weight: 600;
-            &.is-active {
-                color: $color-blue;
-            }
-            &.blank {
-                margin-right: 1rem
-            }
-            &.comma:after {
-                position: absolute;
-                right: -1rem;
-                color: #f5f5f5;
-                content: ',';
-                font-size: 2.5rem;
-            }
-        }
     }
     input,
     textarea {
@@ -394,6 +370,9 @@ footer {
         margin: .5rem 0;
         padding: .5rem 1rem;
         resize: none;
+        &::placeholder {
+            color: #bbb;
+        }
     }
     label {
         width: 100%;
@@ -417,7 +396,7 @@ footer {
         line-height: 150%;
     }
     .submit {
-        background: $color-blue;
+        background: $color;
         border: none;
         color: white;
         font-size: 1.25rem;
@@ -842,7 +821,7 @@ footer {
                 right: 1rem;
             }
         }
-        .align-right {
+        .text-right {
             font-size: 1rem;
             margin-bottom: 4rem;
             strong {
