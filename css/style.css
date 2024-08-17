@@ -510,6 +510,15 @@ footer .logos img {
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: top center;
+  transform: translateX(100vw);
+  animation-name: SlideRight;
+  animation-duration: 1.25s;
+  animation-timing-function: cubic-bezier(0.85, 0, 0.35, 1);
+  animation-fill-mode: forwards;
+}
+.main section article.article-01, .main section article.article-02, .main section article.article-06 {
+  transform: translateX(-100vw);
+  animation-name: SlideLeft;
 }
 .main section article.for-mobile {
   display: none;
@@ -536,29 +545,45 @@ footer .logos img {
   transform: translate(-50%, -310%);
 }
 .main section article.article-01 {
-  animation-delay: calc(1 * 0.0675s);
+  animation-delay: calc(1 * 0.1125s);
 }
 .main section article.article-02 {
-  animation-delay: calc(2 * 0.0675s);
+  animation-delay: calc(2 * 0.1125s);
 }
 .main section article.article-03 {
-  animation-delay: calc(3 * 0.0675s);
+  animation-delay: calc(3 * 0.1125s);
 }
 .main section article.article-04 {
-  animation-delay: calc(4 * 0.0675s);
+  animation-delay: calc(4 * 0.1125s);
 }
 .main section article.article-05 {
-  animation-delay: calc(5 * 0.0675s);
+  animation-delay: calc(5 * 0.1125s);
 }
 .main section article.article-06 {
-  animation-delay: calc(6 * 0.0675s);
+  animation-delay: calc(6 * 0.1125s);
 }
 .main section article.article-07 {
-  animation-delay: calc(7 * 0.0675s);
+  animation-delay: calc(7 * 0.1125s);
 }
 @keyframes SlideIn {
   0% {
-    transform: translateY(100%);
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes SlideLeft {
+  0% {
+    transform: translateX(-100vw);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes SlideRight {
+  0% {
+    transform: translateX(100vw);
   }
   100% {
     transform: translateY(0);

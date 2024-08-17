@@ -529,9 +529,17 @@ footer {
             background-repeat: no-repeat;
             background-size: 100%;
             background-position: top center;
-            // transform: translateY(150%);
-            // animation: SlideIn .875s cubic-bezier(0.65, 0, 1, 1);
-            // animation-fill-mode: forwards;
+            transform: translateX(100vw);
+            animation-name: SlideRight;
+            animation-duration: 1.25s;
+            animation-timing-function: cubic-bezier(0.85, 0, 0.35, 1);
+            animation-fill-mode: forwards;
+            &.article-01,
+            &.article-02,
+            &.article-06 {
+                transform: translateX(-100vw);
+                animation-name: SlideLeft;
+            }
             &.for-mobile {
                 display: none;
             }
@@ -558,13 +566,29 @@ footer {
             }
             @for $i from 1 through 7 {
                 &.article-0#{$i}{
-                    animation-delay: calc((#{$i} * .0675s));
+                    animation-delay: calc((#{$i} * .1125s));
                 }
             }
         }
         @keyframes SlideIn {
             0% {
-                transform: translateY(100%);
+                transform: translateX(-100%);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+        @keyframes SlideLeft {
+            0% {
+                transform: translateX(-100vw);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+        @keyframes SlideRight {
+            0% {
+                transform: translateX(100vw);
             }
             100% {
                 transform: translateY(0);
