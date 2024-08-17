@@ -174,9 +174,9 @@ var Sakura = function Sakura(selector, options) {
     petal.style.width = "".concat(width, "px"); // Remove petals of which the animation ended.
 
     PrefixedEvent(petal, 'AnimationEnd', function () {
-      if (!elementInViewport(petal)) {
-        petal.remove();
-      }
+      petal.remove();
+      // if (!elementInViewport(petal)) {
+      // }
     }); // Remove petals that float out of the viewport.
 
     PrefixedEvent(petal, 'AnimationIteration', function () {
