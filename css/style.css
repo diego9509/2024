@@ -952,7 +952,7 @@ footer .logos img {
   margin: 2rem 0 2.5rem;
 }
 .sub.event .guide div {
-  flex: 0 0 25%;
+  flex: 0 0 20%;
   position: relative;
   font-size: 1.5rem;
   font-weight: 500;
@@ -961,7 +961,7 @@ footer .logos img {
   border-radius: 9999px;
   color: white;
   height: 0;
-  padding-bottom: 25%;
+  padding-bottom: 20%;
 }
 .sub.event .guide div span {
   width: 100%;
@@ -973,7 +973,7 @@ footer .logos img {
 .sub.event .guide div:after {
   position: absolute;
   top: 50%;
-  right: -22.5%;
+  right: -40.5%;
   transform: translateY(-50%);
   content: "";
   display: inline-block;
@@ -1003,7 +1003,7 @@ footer .logos img {
   right: 1rem;
 }
 .sub.event .flex.vertical.align-center {
-  flex: 0 1 25%;
+  flex: 0 1 20%;
 }
 .sub.event .flex.vertical.align-center img {
   width: 100%;
