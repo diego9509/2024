@@ -861,6 +861,10 @@ footer {
                     }
                 }
             }
+            > img {
+                width: 80%;
+                margin: 0 auto;
+            }
         }
         .input-wrapper {
             text-align: center;
@@ -2042,6 +2046,13 @@ footer {
             .guide {
                 div {
                     font-size: 1rem;
+                }
+            }
+        }
+        &.invite {
+            .wrapper {
+                > img {
+                    width: 100%;
                 }
             }
         }

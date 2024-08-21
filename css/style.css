@@ -834,6 +834,10 @@ footer .logos img {
   color: #736357;
   margin-bottom: 0;
 }
+.sub.invite .wrapper > img {
+  width: 80%;
+  margin: 0 auto;
+}
 .sub.invite .input-wrapper {
   text-align: center;
   padding: 1rem 1.25rem;
@@ -1871,6 +1875,9 @@ footer .logos img {
   }
   .sub.event .guide div {
     font-size: 1rem;
+  }
+  .sub.invite .wrapper > img {
+    width: 100%;
   }
   .detail:after {
     display: none;
