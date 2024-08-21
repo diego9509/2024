@@ -475,6 +475,15 @@ footer {
     }
 }
 
+.animation-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
 .main {
     display: flex;
     flex-direction: column;
@@ -503,21 +512,7 @@ footer {
             margin: 0 auto;
             display: flex;
             flex-direction: column;
-            justify-content: end;
             z-index: 1;
-            > .flex {
-                position: relative;
-                top: 45%;
-                width: 100%;
-                height: 100%;
-                &:last-of-type {
-                    width: 104%;
-                    margin-left: -2%;
-                }
-                &:not(:first-of-type) {
-                    margin-top: -25rem;
-                }
-            }
             h2 {
                 position: absolute;
                 top: 2rem;
@@ -525,11 +520,30 @@ footer {
                 transform: translateX(-50%);
                 text-align: center;
                 img {
-                    width: 85%;
+                    height: 6rem;
                     margin: 0 auto;
                 }
                 span {
                     opacity: 0;
+                }
+            }
+            > div {
+                display: flex;
+                flex-direction: column;
+                flex-grow: 1;
+                justify-content: end;
+                > .flex {
+                    position: relative;
+                    top: 50%;
+                    width: 100%;
+                    height: 100%;
+                    &:last-of-type {
+                        width: 104%;
+                        margin-left: -2%;
+                    }
+                    &:not(:first-of-type) {
+                        margin-top: -25rem;
+                    }
                 }
             }
         }
@@ -1850,67 +1864,78 @@ footer {
         section {
             height: calc(100% - 7rem);
             .wrapper {
-                display: block;
-                top: 0;
-                width: 100%;
-                height: 100%;
                 aspect-ratio: initial;
                 h2 {
                     position: relative;
                     top: initial;
                     left: initial;
                     transform: none;
-                }
-                .flex {
-                    flex: 1 0 auto;
-                    flex-wrap: wrap;
-                    width: 100%;
-                    position: initial;
-                    height: initial;
-                    padding: 0 1rem;
-                    // &:last-of-type {
-                    //     height: 50%;
-                    //     article {
-                    //         height: 50%;
-                    //     }
-                    // }
-                    &:not(:first-of-type) {
-                        margin-top: 0;
+                    margin: 0;
+                    padding: 1rem 0;
+                    img {
+                        height: 3.5rem;
+                        margin: 0;
                     }
-                    article {
-                        width: 50%;
-                        animation-delay: 0s !important;
-                        &.for-pc {
-                            display: none;
+                }
+                > div {
+                    justify-content: start;
+                    .flex {
+                        flex: 1 0 25%;
+                        flex-wrap: wrap;
+                        width: 100%;
+                        position: initial;
+                        height: initial;
+                        padding: 0 1rem;
+                        // &:last-of-type {
+                        //     height: 50%;
+                        //     article {
+                        //         height: 50%;
+                        //     }
+                        // }
+                        &:not(:first-of-type) {
+                            margin-top: 0;
                         }
-                        &.for-mobile {
-                            display: block;
-                        }
-                        &:after {
-                            display: none;
-                        }
-                        h3 {
-                            position: relative;
-                            height: 100%;
-                            margin: 0;
-                            padding-top: 1.5rem;
-                        }
-                        img {
-                            position: relative;
-                            display: block;
-                            transform: none;
-                            top: initial;
-                            left: initial;
-                            &:first-of-type {
-                                position: absolute;
-                                top: 0;
-                                left: 50%;
-                                transform: translateX(-50%);
-                                width: 80%;
+                        &:last-of-type {
+                            flex: 1 0 50%;
+                            width: 100%;
+                            article {
+                                height: 50%;
                             }
-                            &:last-of-type {
-                                // display: none;
+                        }
+                        article {
+                            width: 50%;
+                            animation-delay: 0s !important;
+                            &.for-pc {
+                                display: none;
+                            }
+                            &.for-mobile {
+                                display: block;
+                            }
+                            &:after {
+                                display: none;
+                            }
+                            h3 {
+                                position: relative;
                                 height: 100%;
+                                margin: 0;
+                            }
+                            img {
+                                position: relative;
+                                display: block;
+                                transform: none;
+                                top: initial;
+                                left: initial;
+                                &:first-of-type {
+                                    position: absolute;
+                                    top: 0;
+                                    left: 50%;
+                                    transform: translateX(-50%);
+                                    width: 70%;
+                                }
+                                &:last-of-type {
+                                    // display: none;
+                                    height: 100%;
+                                }
                             }
                         }
                     }

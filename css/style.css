@@ -454,6 +454,15 @@ footer .logos img {
   margin-top: 2rem;
 }
 
+.animation-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
 .main {
   display: flex;
   flex-direction: column;
@@ -484,21 +493,7 @@ footer .logos img {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  justify-content: end;
   z-index: 1;
-}
-.main section .wrapper > .flex {
-  position: relative;
-  top: 45%;
-  width: 100%;
-  height: 100%;
-}
-.main section .wrapper > .flex:last-of-type {
-  width: 104%;
-  margin-left: -2%;
-}
-.main section .wrapper > .flex:not(:first-of-type) {
-  margin-top: -25rem;
 }
 .main section .wrapper h2 {
   position: absolute;
@@ -508,11 +503,30 @@ footer .logos img {
   text-align: center;
 }
 .main section .wrapper h2 img {
-  width: 85%;
+  height: 6rem;
   margin: 0 auto;
 }
 .main section .wrapper h2 span {
   opacity: 0;
+}
+.main section .wrapper > div {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: end;
+}
+.main section .wrapper > div > .flex {
+  position: relative;
+  top: 50%;
+  width: 100%;
+  height: 100%;
+}
+.main section .wrapper > div > .flex:last-of-type {
+  width: 104%;
+  margin-left: -2%;
+}
+.main section .wrapper > div > .flex:not(:first-of-type) {
+  margin-top: -25rem;
 }
 .main section article {
   position: relative;
@@ -1701,10 +1715,6 @@ footer .logos img {
     height: calc(100% - 7rem);
   }
   .main section .wrapper {
-    display: block;
-    top: 0;
-    width: 100%;
-    height: 100%;
     aspect-ratio: initial;
   }
   .main section .wrapper h2 {
@@ -1712,52 +1722,67 @@ footer .logos img {
     top: initial;
     left: initial;
     transform: none;
+    margin: 0;
+    padding: 1rem 0;
   }
-  .main section .wrapper .flex {
-    flex: 1 0 auto;
+  .main section .wrapper h2 img {
+    height: 3.5rem;
+    margin: 0;
+  }
+  .main section .wrapper > div {
+    justify-content: start;
+  }
+  .main section .wrapper > div .flex {
+    flex: 1 0 25%;
     flex-wrap: wrap;
     width: 100%;
     position: initial;
     height: initial;
     padding: 0 1rem;
   }
-  .main section .wrapper .flex:not(:first-of-type) {
+  .main section .wrapper > div .flex:not(:first-of-type) {
     margin-top: 0;
   }
-  .main section .wrapper .flex article {
+  .main section .wrapper > div .flex:last-of-type {
+    flex: 1 0 50%;
+    width: 100%;
+  }
+  .main section .wrapper > div .flex:last-of-type article {
+    height: 50%;
+  }
+  .main section .wrapper > div .flex article {
     width: 50%;
     animation-delay: 0s !important;
   }
-  .main section .wrapper .flex article.for-pc {
+  .main section .wrapper > div .flex article.for-pc {
     display: none;
   }
-  .main section .wrapper .flex article.for-mobile {
+  .main section .wrapper > div .flex article.for-mobile {
     display: block;
   }
-  .main section .wrapper .flex article:after {
+  .main section .wrapper > div .flex article:after {
     display: none;
   }
-  .main section .wrapper .flex article h3 {
+  .main section .wrapper > div .flex article h3 {
     position: relative;
     height: 100%;
     margin: 0;
-    padding-top: 1.5rem;
   }
-  .main section .wrapper .flex article img {
+  .main section .wrapper > div .flex article img {
     position: relative;
     display: block;
     transform: none;
     top: initial;
     left: initial;
   }
-  .main section .wrapper .flex article img:first-of-type {
+  .main section .wrapper > div .flex article img:first-of-type {
     position: absolute;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 80%;
+    width: 70%;
   }
-  .main section .wrapper .flex article img:last-of-type {
+  .main section .wrapper > div .flex article img:last-of-type {
     height: 100%;
   }
   .main section article {
