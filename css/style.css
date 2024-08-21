@@ -86,7 +86,6 @@ button {
   width: 100%;
 }
 .intro > .flex .col:first-child button {
-  width: 11.25rem;
   border-radius: 9999px;
   border: none;
   background: #A01857;
@@ -128,6 +127,7 @@ button {
 }
 .intro ul {
   display: flex;
+  gap: 2rem;
   flex-wrap: wrap;
   row-gap: 0.75rem;
   list-style: none;
@@ -135,7 +135,7 @@ button {
   padding: 0;
 }
 .intro ul li {
-  flex: 1 0 50%;
+  flex: 1 0 calc(50% - 1rem);
 }
 .intro .col small {
   position: absolute;
@@ -154,6 +154,9 @@ button {
 }
 .intro .col div .flex .stadler {
   height: 2rem;
+}
+.intro .col div .flex:last-of-type {
+  align-items: start;
 }
 .intro .col div + div {
   margin-top: 1rem;
