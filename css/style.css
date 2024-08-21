@@ -17,6 +17,7 @@ body {
 
 button {
   cursor: pointer;
+  font-family: "Pretendard", sans-serif;
 }
 
 .text-center {
