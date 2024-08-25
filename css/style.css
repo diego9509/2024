@@ -20,6 +20,13 @@ button {
   font-family: "Pretendard", sans-serif;
 }
 
+hr {
+  height: 1px;
+  border: none;
+  background: #eee;
+  margin: 2rem 0;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1047,6 +1054,10 @@ footer .logos img {
   height: 2.5rem;
   margin-bottom: 2.75rem;
 }
+.sub .wrapper .sub-title {
+  height: 1.75rem;
+  margin-bottom: 1rem;
+}
 .sub .wrapper p {
   font-size: 1.125rem;
   line-height: 140%;
@@ -1880,7 +1891,20 @@ footer .logos img {
     gap: 2rem;
   }
   .sub.event .guide div {
+    flex: 0 0 25%;
+    padding-bottom: 25%;
     font-size: 1rem;
+  }
+  .sub.event .guide div:after {
+    width: 8px;
+    height: 16px;
+    right: -24.5%;
+  }
+  .sub.event .flex.vertical.align-center {
+    flex: 0 1 25%;
+  }
+  .sub.event .flex.vertical.align-center span {
+    font-size: 0.875rem;
   }
   .sub.invite .wrapper > img {
     width: 100%;
