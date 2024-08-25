@@ -665,7 +665,8 @@ footer .logos img {
   padding-top: 100%;
   margin: 6.5rem auto 0;
 }
-.video .video-container iframe {
+.video .video-container iframe,
+.video .video-container img {
   z-index: 1;
   top: 0;
   left: 0;
