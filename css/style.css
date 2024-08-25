@@ -818,6 +818,7 @@ footer .logos img {
 }
 .sub.visitor .list {
   row-gap: 4rem;
+  align-items: stretch;
 }
 .sub.invite {
   border-color: #736357;
@@ -1121,8 +1122,12 @@ footer .logos img {
 }
 .sub .list .article {
   flex: 0 0 33.3%;
+  display: flex;
 }
 .sub .list .article .articel-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
   position: relative;
   background: linear-gradient(5deg, rgb(247, 247, 247) 0%, rgb(210, 211, 212) 100%);
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
@@ -1158,6 +1163,7 @@ footer .logos img {
   background-image: url("data:image/svg+xml,%3Csvg width='54' height='42' viewBox='0 0 54 42' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.720215 19.49C0.720215 16.43 1.06021 13.68 1.75021 11.25C2.44021 8.82 3.60021 6.79 5.24021 5.15C6.88021 3.51 9.04021 2.25 11.7402 1.35C14.4302 0.45 17.8402 0 21.9602 0H23.7002V10.14H21.0102C18.9002 10.14 17.2102 10.8 15.9402 12.12C14.6702 13.44 14.0402 15.47 14.0402 18.22V18.85H23.7002V41.19H0.720215V19.48V19.49ZM30.0302 19.49C30.0302 16.43 30.3702 13.68 31.0602 11.25C31.7502 8.82 32.9102 6.79 34.5502 5.15C36.1902 3.51 38.3502 2.25 41.0502 1.35C43.7402 0.45 47.1502 0 51.2702 0H53.0102V10.14H50.3202C48.2102 10.14 46.5202 10.8 45.2502 12.12C43.9802 13.44 43.3502 15.47 43.3502 18.22V18.85H53.0102V41.19H30.0402V19.48L30.0302 19.49Z' fill='%23FF9500'/%3E%3C/svg%3E%0A");
 }
 .sub .list .article .articel-wrapper p {
+  flex-grow: 1;
   position: relative;
   font-size: 1.125rem;
   text-align: left;
