@@ -2095,6 +2095,11 @@ footer {
         }
     }
     .detail {
+        &.letter {
+            .evenly > div.image-area {
+                justify-content: center;
+            }
+        }
         &:after {
             display: none;
         }

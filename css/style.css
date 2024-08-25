@@ -1912,6 +1912,9 @@ footer .logos img {
   .sub.invite .wrapper > img {
     width: 100%;
   }
+  .detail.letter .evenly > div.image-area {
+    justify-content: center;
+  }
   .detail:after {
     display: none;
   }
