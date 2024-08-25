@@ -1927,6 +1927,8 @@ footer {
                         &:last-of-type {
                             flex: 1 0 50%;
                             width: 100%;
+                            margin-left: 0;
+                            margin-right: 0;
                             article {
                                 height: 50%;
                             }
