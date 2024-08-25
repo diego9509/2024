@@ -1325,6 +1325,10 @@ footer .logos img {
   height: 5rem;
   margin: 6.5rem 0 2.5rem;
 }
+.detail.letter .evenly > div:not(.info) {
+  flex: 0 1 50%;
+  justify-content: flex-end;
+}
 .detail .info {
   display: flex;
 }
