@@ -1945,6 +1945,9 @@ footer .logos img {
   .sub.invite .wrapper .evenly > div.menu-image {
     padding: 0;
   }
+  .sub.invite .wrapper .evenly > div:first-of-type {
+    padding: 0;
+  }
   .detail.letter .evenly > div.image-area {
     justify-content: center;
   }

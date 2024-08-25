@@ -2126,8 +2126,13 @@ footer {
                 > img {
                     width: 100%;
                 }
-                .evenly > div.menu-image {
-                    padding: 0;
+                .evenly {
+                    > div.menu-image {
+                        padding: 0;
+                    }
+                    > div:first-of-type {
+                        padding: 0;
+                    }
                 }
             }
         }
