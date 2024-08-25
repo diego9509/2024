@@ -1084,7 +1084,7 @@ footer .logos img {
   flex-wrap: wrap;
   row-gap: 2.5rem;
   justify-content: flex-start;
-  align-items: end;
+  align-items: start;
   padding: 0 5rem;
 }
 .sub .list.last {
@@ -1110,6 +1110,7 @@ footer .logos img {
 }
 .sub .list > div .image-wrapper.horizontal {
   aspect-ratio: 1.3/1;
+  margin-top: 52.8%;
 }
 .sub .list h3 {
   font-size: 1.25rem;
