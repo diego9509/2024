@@ -1026,6 +1026,9 @@ footer .logos img {
   font-weight: 500;
   margin-top: 2rem;
 }
+.sub.event .flex.center {
+  font-size: 1.125rem;
+}
 .sub > .back {
   position: absolute;
   top: 1.5rem;
