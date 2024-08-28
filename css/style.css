@@ -1092,7 +1092,7 @@ footer .logos img {
   row-gap: 2.5rem;
   justify-content: flex-start;
   align-items: start;
-  padding: 0 5rem;
+  padding: 0 5rem 2rem;
 }
 .sub .list.last {
   justify-content: flex-start;
@@ -1500,7 +1500,7 @@ footer .logos img {
     font-size: 0.875rem;
   }
   .sub .list {
-    padding: 0 4rem;
+    padding: 0 4rem 2rem;
   }
   .sub .list > div {
     flex: 0 0 17.5%;
@@ -1558,7 +1558,7 @@ footer .logos img {
     width: 100%;
   }
   .sub .list {
-    padding: 0 3rem;
+    padding: 0 3rem 2rem;
   }
   .sub .list > div {
     flex: 0 0 30%;
@@ -1907,7 +1907,7 @@ footer .logos img {
   .sub .list {
     margin-left: -0.5rem;
     margin-right: -0.5rem;
-    padding: 0;
+    padding: 0 0 2rem;
   }
   .sub .list > div {
     flex: 0 0 50%;
@@ -2034,6 +2034,9 @@ footer .logos img {
   .sub .list .article {
     flex: 0 0 100%;
     padding: 2.5rem 25%;
+  }
+  .sub .list .article:last-of-type {
+    margin-bottom: 2rem;
   }
   .sub.event .guide div {
     font-size: 0.875rem;
