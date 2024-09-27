@@ -439,15 +439,18 @@ footer .logos img {
   padding: 2rem 0;
   border-bottom: 1px dashed #b4b4b4;
 }
+.pop-event.result .flex.align-center > div img {
+  margin: 0 0 0.5rem;
+}
+.pop-event.result .flex.align-center > div b {
+  display: block;
+  text-align: center;
+}
 .pop-event.result .flex.center {
   margin-bottom: 2.5rem;
 }
 .pop-event.result .flex.center img {
   width: 21rem;
-}
-.pop-event.result .flex img {
-  width: 10rem;
-  margin-right: 1.75rem;
 }
 .pop-event.result .flex > div {
   font-size: 1rem;
@@ -458,8 +461,7 @@ footer .logos img {
   flex-wrap: wrap;
 }
 .pop-event.result strong {
-  display: block;
-  margin-bottom: 0.5rem;
+  color: #8F81E9;
 }
 .pop-event.result label {
   margin-top: 2rem;
@@ -1684,18 +1686,23 @@ footer .logos img {
   .pop-event.result {
     width: 100%;
   }
-  .pop-event.result .flex.center img {
-    width: 16rem;
-  }
   .pop-event.result .flex.align-center {
-    flex-direction: column;
+    gap: 1rem;
   }
   .pop-event.result .flex.align-center img {
     margin: 0 0 2rem;
   }
   .pop-event.result .flex.align-center > div {
+    flex: 0 0 calc(33.3% - 1rem);
+  }
+  .pop-event.result .flex.align-center > div img {
     width: 100%;
-    transform: none;
+  }
+  .pop-event.result .flex.other > div {
+    flex: 0 0 100%;
+  }
+  .pop-event.result .flex.other img {
+    width: 16rem;
   }
   .intro h1 {
     padding: 0 2rem;
